@@ -1,0 +1,16 @@
+{
+    "website":{
+        "homePage":{
+            "topBanners":[
+                {
+                    "id":"1",
+                    "imagerUrl":"",
+                    "href":""
+                }
+            ],
+            "menuConfig":{
+                "title":"Our Menu"
+            }
+        }
+    }
+}

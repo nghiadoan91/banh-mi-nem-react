@@ -4,7 +4,6 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { useMediaQuery, Divider, Typography } from "@material-ui/core";
 import { Topbar, Footer, Sidebar } from "./components";
 import { Section } from "components/organisms";
-import { textAlign } from "@material-ui/system";
 
 const useStyles = makeStyles(theme => ({
   root: {
