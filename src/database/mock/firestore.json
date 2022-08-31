@@ -9,8 +9,27 @@
                 }
             ],
             "menuConfig":{
-                "title":"Our Menu"
-            }
+                "title":"Our Menu",
+                "imageUrl":"",
+                "menu":[
+                    {
+                        "id":"1",
+                        "name":"",
+                        "name_th":"",
+                        "name_vn":"",
+                        "price": 0.0,
+                        "description":"",
+                        "description_th":"",
+                        "description_vn":""
+                    }
+                ]
+            },
+            "facebookPosts":[
+                {
+                    "id":"1",
+                    "embeded":""
+                }
+            ]
         }
     }
 }

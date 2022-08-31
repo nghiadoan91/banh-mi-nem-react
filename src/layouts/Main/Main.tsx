@@ -1,10 +1,21 @@
 import React, { useState } from "react";
 import clsx from "clsx";
+import { useRouter } from 'next/router';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { useMediaQuery, Divider, Typography } from "@material-ui/core";
 import { Topbar, Footer, Sidebar } from "./components";
 import { Section } from "components/organisms";
+import { useTranslation } from 'react-i18next';
 
+interface Props {
+  children: React.ReactNode;
+}
+
+const Main = ({ children }: Props): JSX.Element => {
+  const router = useRouter()
+  const { t, i18n } = useTranslation();
+  i18n.changeLanguage(router.locale?? "en")
+  console.log(i18n?.language)
 const useStyles = makeStyles(theme => ({
   root: {
     height: "100%"
@@ -27,12 +38,6 @@ const useStyles = makeStyles(theme => ({
     color: "white"
   }
 }));
-
-interface Props {
-  children: React.ReactNode;
-}
-
-const Main = ({ children }: Props): JSX.Element => {
   const classes = useStyles();
 
   const theme = useTheme();
@@ -42,7 +47,7 @@ const Main = ({ children }: Props): JSX.Element => {
 
   const pages: PagesProps = {
     home: {
-      title: "Trang Chủ",
+      title: t('Home'),
       href: "/",
       id: "home-pages",
       children: {

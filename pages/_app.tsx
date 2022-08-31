@@ -16,7 +16,8 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "assets/css/index.scss";
-import ReactGA from "react-ga";
+import {I18nextProvider } from "react-i18next";
+import i18n from'../localization/translationUtils';
 
 interface AppProps {
   Component: any;
@@ -28,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
+      jssStyles.parentElement?.removeChild(jssStyles);
     }
 
     AOS.init({
@@ -41,8 +42,9 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
 
   return (
     <React.Fragment>
+      <I18nextProvider i18n={i18n}>
       <Head>
-        <title>UShopBKK</title>
+        <title>Banh Mi Nem</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -55,6 +57,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
           <Component {...pageProps} />
         </Paper>
       </ThemeProvider>
+      </I18nextProvider>
     </React.Fragment>
   );
 }
