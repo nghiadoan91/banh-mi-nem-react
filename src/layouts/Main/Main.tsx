@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import clsx from "clsx";
-import { useRouter } from 'next/router';
+
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { useMediaQuery, Divider, Typography } from "@material-ui/core";
 import { Topbar, Footer, Sidebar } from "./components";
@@ -12,10 +12,7 @@ interface Props {
 }
 
 const Main = ({ children }: Props): JSX.Element => {
-  const router = useRouter()
   const { t, i18n } = useTranslation();
-  i18n.changeLanguage(router.locale?? "en")
-  console.log(i18n?.language)
 const useStyles = makeStyles(theme => ({
   root: {
     height: "100%"
@@ -25,6 +22,12 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 10,
     paddingBottom: 10,
     backgroundColor: theme.palette.primary.main
+  },
+  navSection: {
+    maxWidth: "100%",
+    paddingTop: 0,
+    paddingBottom: 0,
+    backgroundColor: theme.palette.secondary.main
   },
   smallSection: {
     paddingTop: 0,
@@ -49,72 +52,22 @@ const useStyles = makeStyles(theme => ({
     home: {
       title: t('Home'),
       href: "/",
-      id: "home-pages",
-      children: {
-        services: {
-          groupTitle: "Services",
-          pages: []
-        },
-        apps: {
-          groupTitle: "Apps",
-          pages: []
-        },
-        web: {
-          groupTitle: "Web",
-          pages: []
-        }
-      }
+      id: "home-pages"
     },
-    service: {
+    aboutUs: {
       title: "Dịch Vụ",
       href: "/service",
-      id: "service-pages",
-      children: {
-        career: {
-          groupTitle: "Career",
-          pages: []
-        },
-        helpCenter: {
-          groupTitle: "Help center",
-          pages: []
-        },
-        company: {
-          groupTitle: "Company",
-          pages: []
-        },
-        contact: {
-          groupTitle: "Contact",
-          pages: []
-        },
-        blog: {
-          groupTitle: "Blog",
-          pages: []
-        },
-        portfolio: {
-          groupTitle: "Portfolio",
-          pages: []
-        }
-      }
+      id: "service-pages"
     },
-    catalog: {
+    ourShop: {
       title: "Hàng Hot!",
       href: "/catalog",
       id: "catalog"
     },
-    guide: {
+    news: {
       title: "Hướng Dẫn",
       href: "/guide",
-      id: "guide",
-      children: {
-        howToOrder: {
-          href: "/guide#how-to-order",
-          title: "Cách đặt hàng"
-        },
-        howToCalculate: {
-          href: "/guide#how-to-calculate",
-          title: "Cách tính trọng lượng"
-        }
-      }
+      id: "guide"
     },
     contact: {
       title: "Liên Hệ",
@@ -152,7 +105,9 @@ const useStyles = makeStyles(theme => ({
           </Typography>
         </Section>
       </Section>
-      <Topbar onSidebarOpen={handleSidebarOpen} pages={pages} />
+      <Section className={classes.navSection}>
+        <Topbar onSidebarOpen={handleSidebarOpen} pages={pages} />
+      </Section>
       <Sidebar
         onClose={handleSidebarClose}
         open={open}

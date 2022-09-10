@@ -9,7 +9,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
-
+import { useRouter } from 'next/router';
 import AOS from "aos";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
@@ -39,7 +39,9 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
       easing: "ease-in-out"
     });
   }, []);
-
+  const router = useRouter()
+  i18n.changeLanguage(router.locale?? "en")
+  console.log(i18n?.language)
   return (
     <React.Fragment>
       <I18nextProvider i18n={i18n}>

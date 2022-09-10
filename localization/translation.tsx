@@ -1,4 +1,5 @@
 export const translation = {
+    resources: {
         en: {
           translation: {
             "Home": "Home",
@@ -14,7 +15,8 @@ export const translation = {
               "Our shop": "Quán xá",
               "News": "Tin tức"
             }
-          },
-        lng: "en", // if you're using a language detector, do not define the lng option
-        fallbackLng: "en"
-      }
+          }
+      },
+      lng: "en", // if you're using a language detector, do not define the lng option
+      fallbackLng: "en"
+}

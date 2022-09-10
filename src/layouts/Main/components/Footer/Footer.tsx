@@ -115,9 +115,9 @@ interface Props {
 const Footer = ({ pages, className, ...rest }: Props): JSX.Element => {
   const classes = useStyles();
 
-  const service = pages.service;
-  const catalog = pages.catalog;
-  const guide = pages.guide;
+  const service = pages.aboutUs;
+  const catalog = pages.ourShop;
+  const guide = pages.news;
   const contact = pages.contact;
 
   return (

@@ -12,38 +12,22 @@ interface PagesProps {
     title: string;
     href: string;
     id: string;
-    children: {
-      services: MenuItemProps;
-      apps: MenuItemProps;
-      web: MenuItemProps;
-    };
+    
   };
-  service: {
-    title: string;
-    href: string;
-    id: string;
-    children: {
-      career: MenuItemProps;
-      helpCenter: MenuItemProps;
-      company: MenuItemProps;
-      contact: MenuItemProps;
-      blog: MenuItemProps;
-      portfolio: MenuItemProps;
-    };
-  };
-  catalog: {
+  aboutUs: {
     title: string;
     href: string;
     id: string;
   };
-  guide: {
+  ourShop: {
     title: string;
     href: string;
     id: string;
-    children: {
-      howToOrder: { href: string; title: string };
-      howToCalculate: { href: string; title: string };
-    };
+  };
+  news: {
+    title: string;
+    href: string;
+    id: string;
   };
   contact: {
     title: string;

@@ -88,11 +88,11 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.primary.dark
   },
   logoContainer: {
-    width: 100,
-    height: 28,
+    width: 40,
+    height: 40,
     [theme.breakpoints.up("md")]: {
-      width: 120,
-      height: 32
+      width: 40,
+      height: 40
     }
   },
   logoImage: {
@@ -152,9 +152,9 @@ const Topbar = ({
   }, []);
 
   const home = pages.home;
-  const service = pages.service;
-  const catalog = pages.catalog;
-  const guide = pages.guide;
+  const service = pages.aboutUs;
+  const catalog = pages.ourShop;
+  const guide = pages.news;
   const contact = pages.contact;
   const RenderPageNoDropDown = ({ page }): JSX.Element => {
     return (
@@ -182,8 +182,8 @@ const Topbar = ({
             className={classes.logoImage}
             src={
               isLightModeTheme
-                ? "/assets/images/logos/ushopbkk-logo.png"
-                : "/assets/images/logos/ushopbkk-logo.png"
+                ? "/assets/images/logos/BanhMiNemLogo.png"
+                : "/assets/images/logos/BanhMiNemLogo.png"
             }
             alt="U Shop BKK"
             lazy={false}
@@ -193,12 +193,12 @@ const Topbar = ({
       <div className={classes.flexGrow} />
       <Hidden smDown>
         <List className={classes.navigationContainer}>
-          {[home, service, catalog].map((page, i) => (
+          {[home, service, catalog, guide].map((page, i) => (
             <div key={i}>
               <RenderPageNoDropDown page={page} />
             </div>
           ))}
-          {[guide].map((page, i) => (
+          {[].map((page, i) => (
             <div key={i}>
               <ListItem
                 id={page.id}
@@ -249,31 +249,11 @@ const Topbar = ({
                           disableGutters
                           className={classes.menuGroupItem}
                         >
-                          <Link href={page.children.howToOrder.href}>
-                            <Typography
-                              variant="body1"
-                              className={clsx(classes.navLink, "submenu-item")}
-                              color="textSecondary"
-                              onClick={handleClose}
-                            >
-                              {page.children.howToOrder.title}
-                            </Typography>
-                          </Link>
                         </ListItem>
                         <ListItem
                           disableGutters
                           className={classes.menuGroupItem}
                         >
-                          <Link href={page.children.howToCalculate.href}>
-                            <Typography
-                              variant="body1"
-                              className={clsx(classes.navLink, "submenu-item")}
-                              color="textSecondary"
-                              onClick={handleClose}
-                            >
-                              {page.children.howToCalculate.title}
-                            </Typography>
-                          </Link>
                         </ListItem>
                       </List>
                     </div>
@@ -291,7 +271,7 @@ const Topbar = ({
             <IconText
               fontIconClass="fas fa-phone-alt"
               color="textSecondary"
-              title="0902-234-786"
+              title="096-004-5474"
             />
           </ListItem>
           <ListItem>
