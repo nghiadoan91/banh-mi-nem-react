@@ -7,7 +7,7 @@ import {
   TopBannerCarousel,
   PricingTable,
   CommonShop,
-  ExchangeRate,
+  FacebookFeed,
   PromotionNews,
   Services,
   OrderSteps
@@ -66,19 +66,19 @@ const Home = (): JSX.Element => {
         </>
       </SectionAlternate>
       <Section>
-        <ExchangeRate />
-      </Section>
-      <SectionAlternate>
-        <OrderSteps />
-      </SectionAlternate>
-      <Section>
-        <PricingTable shipmentPricingTable={homeState.shipment_pricing_table} />
-      </Section>
-      <SectionAlternate>
         <PromotionNews promotionNews={homeState.promotion_news} />
+      </Section>
+      <SectionAlternate>
+      <CommonShop commonShops={homeState.common_shops} />
       </SectionAlternate>
       <Section>
-        <CommonShop commonShops={homeState.common_shops} />
+        <OrderSteps /> 
+      </Section>
+      <SectionAlternate>
+        <PricingTable shipmentPricingTable={homeState.shipment_pricing_table} />
+      </SectionAlternate>
+      <Section>
+        
       </Section>
     </div>
   );

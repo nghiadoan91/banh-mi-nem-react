@@ -5,7 +5,8 @@ export const translation = {
             "Home": "Home",
             "About us": "About us",
             "Our shop": "Our shop",
-            "News": "News"
+            "News": "News",
+            "Contact us": "Contact us"
           }
         },
         vn: {
@@ -13,7 +14,8 @@ export const translation = {
               "Home": "Trang chủ",
               "About us": "Giới thiệu",
               "Our shop": "Quán xá",
-              "News": "Tin tức"
+              "News": "Tin tức",
+              "Contact us": "Liên hệ"
             }
           }
       },

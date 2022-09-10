@@ -8,6 +8,17 @@
                     "href":""
                 }
             ],
+            "advantages":[
+                {
+                    "icon": "fas fa-wifi",
+                    "title": "Order online",
+                    "title_th":"",
+                    "title_vn":"",
+                    "subTitle":"",
+                    "subTitle_th":"",
+                    "subTitle_vn":""
+                }
+            ],
             "menuConfig":{
                 "title":"Our Menu",
                 "imageUrl":"",

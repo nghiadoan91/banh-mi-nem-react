@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const ExchangeRate = ({
+const FacebookFeed = ({
   className,
   ...rest
 }: ViewComponentProps): JSX.Element => {
@@ -84,4 +84,4 @@ const ExchangeRate = ({
   );
 };
 
-export default ExchangeRate;
+export default FacebookFeed;

@@ -34,4 +34,15 @@ interface PagesProps {
     href: string;
     id: string;
   };
+  language: {
+    title: string;
+    href: string;
+    id: string;
+    children: {
+      en: { id: string, href: string; title: string };
+      th: { id: string, href: string; title: string };
+      vn: { id: string, href: string; title: string };
+    };
+
+  }
 }

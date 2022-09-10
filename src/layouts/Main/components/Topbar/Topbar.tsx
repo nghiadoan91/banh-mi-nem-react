@@ -19,6 +19,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Image } from "../../../../components/atoms";
 import { isLightMode } from "../../../../utils/utils";
 import Link from "next/link";
+import i18n from'../../../../../localization/translationUtils';
 
 const useStyles = makeStyles(theme => ({
   flexGrow: {
@@ -147,6 +148,9 @@ const Topbar = ({
     setAnchorEl(null);
     setOpenedPopoverId(null);
   };
+  const changeLanguage = (language: string): void => {
+    i18n.changeLanguage(language)
+  };
   useEffect(() => {
     setLightModeTheme(isLightMode());
   }, []);
@@ -156,6 +160,7 @@ const Topbar = ({
   const catalog = pages.ourShop;
   const guide = pages.news;
   const contact = pages.contact;
+  const language = pages.language;
   const RenderPageNoDropDown = ({ page }): JSX.Element => {
     return (
       <div>
@@ -198,7 +203,12 @@ const Topbar = ({
               <RenderPageNoDropDown page={page} />
             </div>
           ))}
-          {[].map((page, i) => (
+          {[contact].map((page, i) => (
+            <div key={i}>
+              <RenderPageNoDropDown page={page} />
+            </div>
+          ))}
+          {[language].map((page, i) => (
             <div key={i}>
               <ListItem
                 id={page.id}
@@ -249,22 +259,53 @@ const Topbar = ({
                           disableGutters
                           className={classes.menuGroupItem}
                         >
+                          <div>
+                            <Typography
+                              variant="body1"
+                              className={clsx(classes.navLink, "submenu-item")}
+                              color="textSecondary"
+                              onClick={()=>{changeLanguage("en")}}
+                            >
+                              {page.children.en.title}
+                            </Typography>
+                          </div>
+
                         </ListItem>
                         <ListItem
                           disableGutters
                           className={classes.menuGroupItem}
                         >
+                          <div>
+                            <Typography
+                              variant="body1"
+                              className={clsx(classes.navLink, "submenu-item")}
+                              color="textSecondary"
+                              onClick={()=>changeLanguage("th")}
+                            >
+                              {page.children.th.title}
+                            </Typography>
+                          </div>
+                        </ListItem>
+                        <ListItem
+                          disableGutters
+                          className={classes.menuGroupItem}
+                        >
+                          <div>
+                            <Typography
+                              variant="body1"
+                              className={clsx(classes.navLink, "submenu-item")}
+                              color="textSecondary"
+                              onClick={()=>changeLanguage("vn")}
+                            >
+                              {page.children.vn.title}
+                            </Typography>
+                          </div>
                         </ListItem>
                       </List>
                     </div>
                   </div>
                 </div>
               </Popover>
-            </div>
-          ))}
-          {[contact].map((page, i) => (
-            <div key={i}>
-              <RenderPageNoDropDown page={page} />
             </div>
           ))}
           <ListItem>

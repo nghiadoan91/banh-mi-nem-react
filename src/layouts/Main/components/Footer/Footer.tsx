@@ -122,68 +122,6 @@ const Footer = ({ pages, className, ...rest }: Props): JSX.Element => {
 
   return (
     <>
-      <div {...rest} className={clsx(classes.root, className)}>
-        <div className={classes.footerContainer}>
-          <Grid container spacing={0}>
-            <Grid item xs={6} md={2}>
-              <List disablePadding>
-                <ListItem disableGutters className={classes.logoContainerItem}>
-                  <div className={classes.logoContainer}>
-                    <a href="/" title="U Shop BKK">
-                      <Image
-                        className={classes.logoImage}
-                        src="/assets/images/logos/ushopbkk-logo.png"
-                        alt="U Shop BKK"
-                        lazy={false}
-                      />
-                    </a>
-                  </div>
-                </ListItem>
-                <ListItem disableGutters>
-                  <IconButton className={classes.socialIcon}>
-                    <Image
-                      id="zalo"
-                      src="/assets/images/logos/zalo.png"
-                      lazyProps={{ height: 30, width: 30 }}
-                    />
-                  </IconButton>
-                  <IconButton className={classes.socialIcon}>
-                    <Image
-                      id="facebook-messenger"
-                      src="/assets/images/logos/facebook-messenger.svg"
-                      lazyProps={{ height: 30, width: 30 }}
-                    />
-                  </IconButton>
-                </ListItem>
-              </List>
-            </Grid>
-            <Grid item xs={12} md={10} className={classes.menuListContainer}>
-              <Grid container spacing={0}>
-                {[service, catalog, guide].map((page, i) => (
-                  <List key={i}>
-                    <ListItem
-                      disableGutters
-                      key={i}
-                      className={classes.menuGroupTitle}
-                    >
-                      <div key={page.id}>
-                        <Typography
-                          variant="body2"
-                          component={"a"}
-                          href={page.href}
-                          className={clsx(classes.navLink, "submenu-item")}
-                        >
-                          {page.title}
-                        </Typography>
-                      </div>
-                    </ListItem>
-                  </List>
-                ))}
-              </Grid>
-            </Grid>
-          </Grid>
-        </div>
-      </div>
       <div {...rest} className={clsx(classes.root2, className)}>
         <div className={classes.footerContainer}>
           <Grid container spacing={0}>

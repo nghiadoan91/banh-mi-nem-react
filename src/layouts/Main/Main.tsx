@@ -55,24 +55,46 @@ const useStyles = makeStyles(theme => ({
       id: "home-pages"
     },
     aboutUs: {
-      title: "Dịch Vụ",
+      title: t('About us'),
       href: "/service",
       id: "service-pages"
     },
     ourShop: {
-      title: "Hàng Hot!",
+      title: t('Our shop'),
       href: "/catalog",
       id: "catalog"
     },
     news: {
-      title: "Hướng Dẫn",
-      href: "/guide",
-      id: "guide"
+      title: t('News'),
+      href: "https://www.facebook.com/banhminem",
+      id: "news"
     },
     contact: {
-      title: "Liên Hệ",
+      title: t("Contact us"),
       href: "/contact",
       id: "contact"
+    },
+    language: {
+      title: t("Language"),
+      href:"/",
+      id:"language",
+      children:{
+        en:{
+          id: "en",
+          href:"/en",
+          title:"English"
+        },
+        th:{
+          id: "th",
+          href:"/th",
+          title:"Thai"
+        },
+        vn:{
+          id: "vn",
+          href:"/vn",
+          title:"Vietnamese"
+        }
+      }
     }
   };
 
@@ -99,7 +121,7 @@ const useStyles = makeStyles(theme => ({
           <Typography className={classes.topText} component="h6" align="center">
             Banh Mi NEM - Đang trong thời gian hoàn thiện website. Xin liên hệ với{" "}
             {""}
-            <a href="https://www.facebook.com/profile.php?id=100061682892564">
+            <a href="https://www.facebook.com/banhminem">
               Facebook mình
             </a>
           </Typography>
