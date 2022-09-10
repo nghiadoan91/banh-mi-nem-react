@@ -22,9 +22,9 @@ const Services = ({ advantages }): JSX.Element => {
             </Typography>{" "}
             và{" "}
             <Typography component="span" variant="inherit" color="primary">
-              vận chuyển
+              delivery
             </Typography>{" "}
-            hàng Thái về Việt Nam
+            
           </span>
         }
         subtitle=""
@@ -35,7 +35,7 @@ const Services = ({ advantages }): JSX.Element => {
               size={isMd ? "large" : "medium"}
               color="primary"
             >
-              Đặt Hàng Ngay
+              Order Ngay
             </Button>
           </Link>
         ]}

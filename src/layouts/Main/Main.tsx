@@ -97,7 +97,7 @@ const useStyles = makeStyles(theme => ({
       <Section className={classes.bigSection}>
         <Section className={classes.smallSection}>
           <Typography className={classes.topText} component="h6" align="center">
-            UShopBKK - Đang trong thời gian hoàn thiện website. Xin liên hệ với{" "}
+            Banh Mi NEM - Đang trong thời gian hoàn thiện website. Xin liên hệ với{" "}
             {""}
             <a href="https://www.facebook.com/profile.php?id=100061682892564">
               Facebook mình
