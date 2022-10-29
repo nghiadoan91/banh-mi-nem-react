@@ -14,7 +14,6 @@ import "./assets/css/index.scss";
 
 import "aos/dist/aos.css";
 
-const browserHistory = createBrowserHistory();
 const App = (): JSX.Element => {
   AOS.init({
     once: true,
@@ -22,13 +21,9 @@ const App = (): JSX.Element => {
     duration: 500,
     easing: "ease-in-out"
   });
-
   return (
     <ThemeProvider theme={theme}>
       <Paper elevation={0}>
-        <Router history={browserHistory}>
-          <Routes />
-        </Router>
       </Paper>
     </ThemeProvider>
   );

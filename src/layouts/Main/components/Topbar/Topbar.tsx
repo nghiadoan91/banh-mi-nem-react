@@ -115,6 +115,16 @@ const useStyles = makeStyles(theme => ({
   },
   menuGroupTitle: {
     textTransform: "uppercase"
+  },
+  topBigScreen:{
+    ['@media (max-width:800px)']: {
+      display: 'none'
+    }
+  },
+  topSmallScreen : {
+    ['@media (min-width:800px)']: {
+      display: 'none'
+    }
   }
 }));
 
@@ -196,7 +206,7 @@ const Topbar = ({
         </a>
       </div>
       <div className={classes.flexGrow} />
-      <Hidden smDown>
+      <div className={classes.topBigScreen}>
         <List className={classes.navigationContainer}>
           {[home, service, catalog, guide].map((page, i) => (
             <div key={i}>
@@ -348,8 +358,8 @@ const Topbar = ({
             </Button>
           </ListItem>
         </List>
-      </Hidden>
-      <Hidden mdUp>
+      </div>
+      <div className={classes.topSmallScreen}>
         <IconButton
           className={classes.iconButton}
           onClick={() => onSidebarOpen()}
@@ -357,7 +367,7 @@ const Topbar = ({
         >
           <MenuIcon />
         </IconButton>
-      </Hidden>
+      </div>
     </Toolbar>
   );
 };

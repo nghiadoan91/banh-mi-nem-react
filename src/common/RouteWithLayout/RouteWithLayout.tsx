@@ -16,14 +16,7 @@ const RouteWithLayout = ({
 }: Props): JSX.Element => {
   var defaultTitle = "U Shop BKK";
   return (
-    <Route
-      {...rest}
-      render={matchProps => (
-        <Layout>
-          <TitleComponent title={title} />
-          <Component {...matchProps} />
-        </Layout>
-      )}
+    <Route children
     />
   );
 };

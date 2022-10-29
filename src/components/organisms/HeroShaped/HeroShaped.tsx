@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     height: '100%',
     display: 'flex',
-    maxWidth: theme.layout.contentWidth,
+    maxWidth: 1236,
     margin: '0 auto',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse',
