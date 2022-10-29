@@ -5,48 +5,28 @@ import { SectionHeader } from "components/molecules";
 import { DescriptionListIcon } from "components/organisms";
 import { Icon } from "components/atoms";
 import Link from "next/link";
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme => ({
+  section: {
+    paddingTop: 20
+}
+}));
 
 const Services = ({ advantages }): JSX.Element => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });
+  const classes = useStyles();
   return (
     <div>
-      <SectionHeader
-        title={
-          <span>
-            Dịch vụ{" "}
-            <Typography component="span" variant="inherit" color="primary">
-              order
-            </Typography>{" "}
-            và{" "}
-            <Typography component="span" variant="inherit" color="primary">
-              delivery
-            </Typography>{" "}
-            
-          </span>
-        }
-        subtitle=""
-        ctaGroup={[
-          <Link href="/order-form">
-            <Button
-              variant="contained"
-              size={isMd ? "large" : "medium"}
-              color="primary"
-            >
-              Order Ngay
-            </Button>
-          </Link>
-        ]}
-        fadeUp
-      />
-      <Grid container spacing={4}>
+      <Grid className={classes.section} container spacing={4}>
         {advantages.map((item: any, index: number) => (
           <Grid key={index} item xs={12} sm={6} md={3} data-aos="fade-up">
             <DescriptionListIcon
               title={item.title}
-              subtitle={item.subtitle}
+              subtitle={item.subTitle}
               titleVariant="h1"
               subtitleVariant="body1"
               icon={

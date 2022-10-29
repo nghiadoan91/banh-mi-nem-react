@@ -3,14 +3,14 @@ import "firebase/database";
 import "firebase/firestore";
 
 const config = {
-  apiKey: "AIzaSyCmsKdBrfz9ncUxJc2EGk3qj11y5tEJpPM",
-  authDomain: "u-shop-bkk.firebaseapp.com",
-  databaseURL: "https://u-shop-bkk-default-rtdb.firebaseio.com",
-  projectId: "u-shop-bkk",
-  storageBucket: "u-shop-bkk.appspot.com",
-  messagingSenderId: "155427021671",
-  appId: "1:155427021671:web:546d148bf66e601a6745c2",
-  measurementId: "G-9Z025GD99Y"
+  apiKey: "AIzaSyARrzo62623Bbvxvbc_ZzzEGmq9LEkZLB0",
+  authDomain: "banh-mi-nem.firebaseapp.com",
+  projectId: "banh-mi-nem",
+  storageBucket: "banh-mi-nem.appspot.com",
+  messagingSenderId: "721558851589",
+  appId: "1:721558851589:web:70d3b945a0c46532a10c6c",
+  measurementId: "G-R77RD6RWK5",
+  databaseURL: "https://banh-mi-nem-default-rtdb.asia-southeast1.firebasedatabase.app"
 };
 if (!firebase.apps.length) {
   firebase.initializeApp(config);

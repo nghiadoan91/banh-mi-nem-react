@@ -29,7 +29,7 @@ const CommonShop = ({ commonShops }): JSX.Element => {
       <SectionHeader
         title={
           <>
-            WebSite mua hàng phổ biến <br />
+            Order with us <br />
             {isMd ? null : <br />} &nbsp;
             <TypedText
               component="span"
@@ -37,7 +37,7 @@ const CommonShop = ({ commonShops }): JSX.Element => {
               color="secondary"
               className={classes.typed}
               typedProps={{
-                strings: commonShops.map(item => item.title),
+                strings: commonShops.map(item => item.name),
                 typeSpeed: 50,
                 loop: true
               }}
@@ -64,7 +64,7 @@ const CommonShop = ({ commonShops }): JSX.Element => {
                 variant="outlined"
                 liftUp
                 align="center"
-                title={item.title}
+                title={item.name}
                 icon={
                   <Image
                     className={classes.logo}

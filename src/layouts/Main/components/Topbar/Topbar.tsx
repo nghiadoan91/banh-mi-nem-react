@@ -156,7 +156,7 @@ const Topbar = ({
   }, []);
 
   const home = pages.home;
-  const service = pages.aboutUs;
+  const service = pages.ourMenu;
   const catalog = pages.ourShop;
   const guide = pages.news;
   const contact = pages.contact;
@@ -315,7 +315,7 @@ const Topbar = ({
               title="096-004-5474"
             />
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <a href="/" title="Zalo">
               <Image
                 id="zalo"
@@ -332,7 +332,7 @@ const Topbar = ({
                 lazyProps={{ height: 30, width: 30 }}
               />
             </a>
-          </ListItem>
+          </ListItem> */}
           <ListItem
             className={clsx(classes.listItem, "menu-item--no-dropdown")}
           >
@@ -341,10 +341,10 @@ const Topbar = ({
               variant="contained"
               color="primary"
               component="a"
-              href="/order-form"
+              href="/#link-to-order"
               className={classes.listItemButton}
             >
-              Đặt Hàng
+              Order Now
             </Button>
           </ListItem>
         </List>

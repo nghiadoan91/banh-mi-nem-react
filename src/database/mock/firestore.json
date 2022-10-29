@@ -10,13 +10,40 @@
             ],
             "advantages":[
                 {
-                    "icon": "fas fa-wifi",
+                    "icon": "fas fa-moped",
                     "title": "Order online",
                     "title_th":"",
-                    "title_vn":"",
-                    "subTitle":"",
+                    "title_vn":"Đặt hàng online",
+                    "subTitle":"Order with us through Grab, Robinhood, Shopee Food and Lineman.",
                     "subTitle_th":"",
-                    "subTitle_vn":""
+                    "subTitle_vn":"Đặt hàng qua Grab, Robinhood, Shopee Food, Lineman."
+                },
+                {
+                    "icon": "fas fa-pot-food",
+                    "title": "Authentic taste",
+                    "title_th":"",
+                    "title_vn":"Hương vị Việt",
+                    "subTitle":"Guarantee bringing the authentic taste from Vietnam.",
+                    "subTitle_th":"",
+                    "subTitle_vn":"Đảm bảo vị của người Việt"
+                },
+                {
+                    "icon": "fas fa-hand-holding-usd",
+                    "title": "Affordable Pricing",
+                    "title_th":"",
+                    "title_vn":"Giá cả hợp lý",
+                    "subTitle":"One of our main goal is to bring Vietnamese street food closer to expats and Thai locals",
+                    "subTitle_th":"",
+                    "subTitle_vn":"Mang ẩm thực đường phố Việt Nam đến gần hơn với người nước ngoài và người dân địa phương Thái Lan"
+                },
+                {
+                    "icon": "fas fa-people-line",
+                    "title": "Service mind",
+                    "title_th":"",
+                    "title_vn":"Phục vụ",
+                    "subTitle":"We always continue to improve our service. Your feedback is very important to us.",
+                    "subTitle_th":"",
+                    "subTitle_vn":"Chúng tôi luôn tiếp tục cải thiện dịch vụ của mình. Phản hồi của bạn rất quan trọng với chúng tôi"
                 }
             ],
             "menuConfig":{
@@ -35,10 +62,84 @@
                     }
                 ]
             },
-            "facebookPosts":[
+            "servingMenu":[
                 {
-                    "id":"1",
-                    "embeded":""
+                    "imageUrl":"https://i.pinimg.com/originals/57/14/e6/5714e657bc599b5e2d808900e6a5bd48.jpg",
+                    "name":"Banh Mi",
+                    "name_th":"",
+                    "name_vn":"",
+                    "description":"Options available: full toppings, charsiew, mix ham & sausages, pate egg, pork-free",
+                    "description_th":"",
+                    "description_vn":"",
+                    "price": "70 - 120 THB"
+                },
+                {
+                    "imageUrl":"https://i.pinimg.com/originals/aa/83/a5/aa83a55a4831f5f49e2a50bbaad91503.jpg",
+                    "name":"Paeng Ji",
+                    "name_th":"",
+                    "name_vn":"",
+                    "description":"Single piece, Set 3, Set 5",
+                    "description_th":"",
+                    "description_vn":"",
+                    "price": "35 - 145 THB"
+                },
+                {
+                    "imageUrl":"https://i.pinimg.com/originals/60/1c/6a/601c6a063f1d6a4a350433566ba0f955.jpg",
+                    "name":"Fresh Spring roll",
+                    "name_th":"",
+                    "name_vn":"",
+                    "description":"Single piece, Set 2, Set 3",
+                    "description_th":"",
+                    "description_vn":"",
+                    "price": "35 - 95 THB"
+                },
+                {
+                    "imageUrl":"https://i.pinimg.com/originals/97/02/03/97020318021a5bbe93688f82a772e741.jpg",
+                    "name":"Pho Beef",
+                    "name_th":"",
+                    "name_vn":"",
+                    "description":"Optional with egg and extra veggie",
+                    "description_th":"",
+                    "description_vn":"",
+                    "price": "100 - 115 THB"
+                }
+            ],
+            "deliveryServices":[
+                {
+                    "name":"Grab Food",
+                    "image":"https://i.pinimg.com/originals/f6/73/76/f67376bcde1fb20a4217385eab4dd7b3.jpg",
+                    "href":""
+                },
+                {
+                    "name":"Shopee Food",
+                    "image":"https://i.pinimg.com/originals/67/9f/16/679f168823153bdbf4ca334868e9176d.jpg",
+                    "href":""
+                },
+                {
+                    "name":"Robinhood",
+                    "image":"https://i.pinimg.com/originals/2d/9a/c4/2d9ac444430ab7fd77778151297d521f.jpg",
+                    "href":""
+                },
+                {
+                    "name":"Line Man",
+                    "image":"https://i.pinimg.com/originals/bf/4c/30/bf4c3022938472887a0923b65dc3b9b4.jpg",
+                    "href":""
+                }
+            ]
+        },
+        "branchesPage":{
+            "shops":[
+                {
+                    "title":"Main Shop",
+                    "iframe":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15504.399668065547!2d100.4776193!3d13.7123979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xebf7f5f3686f01b9!2sBanh%20Mi%20Nem!5e0!3m2!1sen!2sth!4v1666708842231!5m2!1sen!2sth"
+                },
+                {
+                    "title":"Banh Mi Nem - Stall BTS Talad Plu",
+                    "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0884476558163!2d100.475295451394!3d13.713092701834261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2995bfcfe5c7b%3A0x1475ceccec7e51f8!2sBanh%20Mi%20Nem%20-%20Stall!5e0!3m2!1sen!2sth!4v1666708990996!5m2!1sen!2sth"
+                },
+                {
+                    "title":"Banh Mi Nem - Stall United Center @ Silom",
+                    "iframe":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31008.701470048403!2d100.45992629072725!3d13.713138976854436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2d06af0945%3A0xb74e7412b5859c50!2sBanh%20Mi%20Nem%20-%20United%20Center%20Food%20Court!5e0!3m2!1sen!2sth!4v1666709041032!5m2!1sen!2sth"
                 }
             ]
         }

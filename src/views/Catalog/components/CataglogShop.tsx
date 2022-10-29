@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const CatalogShop = ({ title, commonShops }): JSX.Element => {
+const CatalogShop = ({commonShop }): JSX.Element => {
   const classes = useStyles();
 
   const theme = useTheme();
@@ -29,40 +29,8 @@ const CatalogShop = ({ title, commonShops }): JSX.Element => {
   console.log("check");
   return (
     <div>
-      <SectionHeader title={title} align="left" />
-      <Grid container spacing={isMd ? 4 : 1}>
-        {commonShops.map((item: any, index: number) => (
-          <Grid
-            key={index}
-            item
-            container
-            alignItems="center"
-            direction="column"
-            xs={6}
-            sm={6}
-            md={2}
-            data-aos="fade-up"
-          >
-            <a href={item.href} target="blank">
-              <CardCategory
-                noPadding={true}
-                variant="outlined"
-                liftUp
-                align="center"
-                title={item.name}
-                className={classes.cardBase}
-                icon={
-                  <Image
-                    className={classes.logo}
-                    src={item.image}
-                    lazyProps={{ height: 100 }}
-                  />
-                }
-              />
-            </a>
-          </Grid>
-        ))}
-      </Grid>
+      <SectionHeader title={commonShop.title} align="left" />
+      <iframe src={commonShop.iframe} width="100%" height="450" style={{border:0}} loading="lazy"></iframe>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     height: "100%",
     position: "relative",
-    background: `url(/assets/images/servicepage/hero/contact-cover.svg) no-repeat #3F50B5`,
+    background: `url(/assets/images/servicepage/hero/contact-cover.svg) no-repeat #BC2248`,
     overflow: "hidden",
     minHeight: 400,
     [theme.breakpoints.up("md")]: {

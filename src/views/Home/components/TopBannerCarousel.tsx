@@ -21,11 +21,11 @@ const TopBannerCarousel = ({ topBanners }): JSX.Element => {
   SwiperCore.use([Autoplay, Pagination, Scrollbar, A11y]);
   const classes = useStyles();
   return (
-    <Swiper className={classes.bannerTop} slidesPerView={1} pagination={{ clickable: true }} autoplay={true}>
-      {[1].map((item: any, index: number) => (
+    <Swiper slidesPerView={1} pagination={{ clickable: true }} autoplay={true}>
+      {topBanners.map((item: any, index: number) => (
         <SwiperSlide key={index}>
           <Image
-            src={"https://i.pinimg.com/originals/20/ad/4a/20ad4ada515f1f0e6aa6d8d853807431.jpg"}
+            src={item.imageUrl}
             className={classes.image}
             lazyProps={{ width: "100%", height: "100%" }}
           />

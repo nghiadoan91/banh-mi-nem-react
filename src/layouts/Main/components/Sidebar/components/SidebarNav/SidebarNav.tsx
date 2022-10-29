@@ -76,9 +76,9 @@ const SidebarNav = ({
   const classes = useStyles();
 
   const home = pages.home;
-  const service = pages.service;
-  const catalog = pages.catalog;
-  const guide = pages.guide;
+  const service = pages.ourMenu;
+  const catalog = pages.ourShop;
+  const guide = pages.language;
   const contact = pages.contact;
 
   return (
@@ -108,36 +108,6 @@ const SidebarNav = ({
           title="0902-234-786"
         />
       </ListItem>
-      <ListItem>
-        <Image
-          id="zalo"
-          src="/assets/images/logos/zalo.svg"
-          lazyProps={{ height: 30, width: 30 }}
-        />
-        <Typography
-          noWrap
-          variant="subtitle1"
-          color="textPrimary"
-          className={classes.imageText}
-        >
-          Zalo
-        </Typography>
-      </ListItem>
-      <ListItem>
-        <Image
-          id="facebook-messenger"
-          src="/assets/images/logos/facebook-messenger.svg"
-          lazyProps={{ height: 30, width: 30 }}
-        />
-        <Typography
-          noWrap
-          variant="subtitle1"
-          color="textPrimary"
-          className={classes.imageText}
-        >
-          Facebook
-        </Typography>
-      </ListItem>
       <ListItem className={classes.listItemButton}>
         <Button
           size="large"
@@ -145,9 +115,9 @@ const SidebarNav = ({
           color="primary"
           fullWidth
           component="a"
-          href="/order-form"
+          href="/#link-to-order"
         >
-          Đặt Hàng
+          Order Now
         </Button>
       </ListItem>
     </List>

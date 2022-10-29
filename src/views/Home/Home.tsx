@@ -10,9 +10,10 @@ import {
   FacebookFeed,
   PromotionNews,
   Services,
-  OrderSteps
+  OrderSteps,
+  ServingMenu
 } from "./components";
-import { uShopBKKfireStore } from "Config";
+import { homepage_advantages, uShopBKKfireStore } from "Config";
 
 const useStyles = makeStyles(theme => ({
   sectionAlternate: {
@@ -33,23 +34,27 @@ const useStyles = makeStyles(theme => ({
 
 const Home = (): JSX.Element => {
   const [homeState, setHomeState] = useState<any>({
-    homepage_top_banner: [],
-    homepage_advantages: [],
-    shipment_pricing_table: [],
-    promotion_news: [],
-    common_shops: []
+    topBanners: [],
+    advantages: [],
+    servingMenu: [],
+    facebookPosts:[],
+    deliveryServices: []
   });
   useEffect(() => {
     console.log("fetch....");
     uShopBKKfireStore
-      .collection("homepage")
+      .collection("HomePage")
       .doc("config")
       .get()
       .then(result => {
         if (result.data() != null) {
           setHomeState(result.data());
         }
+        console.log(result);
       });
+      setTimeout(() => {
+        if (location.hash) location = location;
+      }, 500);
   }, []);
 
   const classes = useStyles();
@@ -60,25 +65,19 @@ const Home = (): JSX.Element => {
         className={classes.sectionAlternate}
       >
         <>
-          <TopBannerCarousel topBanners={homeState.homepage_top_banner} />
+          <TopBannerCarousel topBanners={homeState.topBanners} />
           <br />
-          <Services advantages={homeState.homepage_advantages} />
+          <Services advantages={homeState.advantages} />
         </>
       </SectionAlternate>
       <Section>
-        <PromotionNews promotionNews={homeState.promotion_news} />
+        <ServingMenu servingMenu={homeState.servingMenu} />
       </Section>
-      <SectionAlternate>
-      <CommonShop commonShops={homeState.common_shops} />
+      <SectionAlternate id="link-to-order">
+        <CommonShop commonShops={homeState.deliveryServices} />
       </SectionAlternate>
       <Section>
-        <OrderSteps /> 
-      </Section>
-      <SectionAlternate>
-        <PricingTable shipmentPricingTable={homeState.shipment_pricing_table} />
-      </SectionAlternate>
-      <Section>
-        
+        <PromotionNews promotionNews={homeState.facebookPosts} />
       </Section>
     </div>
   );

@@ -18,16 +18,16 @@ const useStyles = makeStyles(theme => {
 });
 
 const Cataglog = (): JSX.Element => {
-  const [catalogList, setCatalogList] = useState<any>([]);
+  const [shops, setShops] = useState<any>([]);
   useEffect(() => {
     console.log("fetch....");
     uShopBKKfireStore
-      .collection("homepage")
-      .doc("catalog")
+      .collection("BranchesPage")
+      .doc("Config")
       .get()
       .then(result => {
         if (result.data() != null) {
-          setCatalogList(result.data().catalogList);
+          setShops(result.data().shops);
         }
       });
   }, []);
@@ -39,11 +39,11 @@ const Cataglog = (): JSX.Element => {
 
   return (
     <div>
-      {catalogList.map((item: any, index: number) => {
+      {shops.map((item: any, index: number) => {
         if (index % 2 === 0) {
           return (
             <Section key={index} className={classes.section}>
-              <CatalogShop title={item.title} commonShops={item.shops} />
+              <CatalogShop commonShop={item} />
             </Section>
           );
         } else {
@@ -53,7 +53,7 @@ const Cataglog = (): JSX.Element => {
               key={index}
               className={classes.sectionAlternate}
             >
-              <CatalogShop title={item.title} commonShops={item.shops} />
+              <CatalogShop commonShop={item} />
             </SectionAlternate>
           );
         }

@@ -4,7 +4,7 @@ export const translation = {
           translation: {
             "Home": "Home",
             "About us": "About us",
-            "Our shop": "Our shop",
+            "Our shops": "Our shops",
             "News": "News",
             "Contact us": "Contact us"
           }
@@ -13,7 +13,7 @@ export const translation = {
             translation: {
               "Home": "Trang chủ",
               "About us": "Giới thiệu",
-              "Our shop": "Quán xá",
+              "Our shop": "Chi nhánh",
               "News": "Tin tức",
               "Contact us": "Liên hệ"
             }

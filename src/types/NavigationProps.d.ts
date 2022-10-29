@@ -14,7 +14,7 @@ interface PagesProps {
     id: string;
     
   };
-  aboutUs: {
+  ourMenu: {
     title: string;
     href: string;
     id: string;

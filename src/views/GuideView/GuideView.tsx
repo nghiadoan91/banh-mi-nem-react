@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { Button, Grid } from "@material-ui/core";
 import { LearnMoreLink } from "../../components/atoms";
 import { SectionHeader } from "../../components/molecules";
 import { Section } from "../../components/organisms";
@@ -11,11 +11,14 @@ const useStyles = makeStyles(theme => {
   return {
     section: {
       paddingTop: 0,
-      paddingBottom: 0
+      paddingBottom: 0,
+      alignItems: "center"
     },
-    label: {
-      fontWeight: "bold",
-      textTransform: "uppercase"
+    image: {
+      objectFit: "cover",
+      width: '100%',
+      align: "center",
+      alignItems: "center"
     }
   };
 });
@@ -36,15 +39,13 @@ const GuideView = (): JSX.Element => {
     <div>
       <Section className={classes.section}>
         <>
-          <Image
-            id="how-to-order"
-            src="https://i.pinimg.com/originals/08/9f/54/089f54a4e05b1a54860e55b699362373.jpg"
+          <Image className={classes.image}
+            src="https://i.pinimg.com/originals/e4/83/7f/e4837f4ec07e6bf89e9dcad050c47f30.jpg"
           />
-          <Image
-            id="how-to-calculate"
-            src="https://i.pinimg.com/originals/59/28/d9/5928d9aeedef924a0cc851c7ef14154e.jpg"
+          <Image className={classes.image}
+            src="https://i.pinimg.com/originals/a8/50/39/a8503976f868adf604fa934464e1888e.jpg"
           />
-        </>
+       </>
       </Section>
     </div>
   );

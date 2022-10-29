@@ -115,7 +115,7 @@ interface Props {
 const Footer = ({ pages, className, ...rest }: Props): JSX.Element => {
   const classes = useStyles();
 
-  const service = pages.aboutUs;
+  const service = pages.ourMenu;
   const catalog = pages.ourShop;
   const guide = pages.news;
   const contact = pages.contact;
@@ -126,19 +126,10 @@ const Footer = ({ pages, className, ...rest }: Props): JSX.Element => {
         <div className={classes.footerContainer}>
           <Grid container spacing={0}>
             <Grid item xs={12} md={5} className={classes.gridContainerFooter}>
-              <IconText fontIconClass="fas fa-home" title="Address" />
-              <ul>
-                <li>
-                  <Typography variant="body1">
-                    106/10 Đỗ Năng Tế, An Lạc A, Bình Tân, HCM
+              <IconText fontIconClass="fas fa-home" title="Head office" />
+              <Typography variant="body1">
+                  92 Soi Ratchadaphisek 15, Khwaeng Dao Khanong, Khet Thon Buri Krung Thep Maha Nakhon 10600
                   </Typography>
-                </li>
-                <li>
-                  <Typography variant="body1">
-                    198/127 Narathiwas Rd., Chongnonsi, Yannawa, BANGKOK 10120
-                  </Typography>
-                </li>
-              </ul>
             </Grid>
             <Grid item xs={12} md={2}>
               <br></br>
@@ -148,12 +139,12 @@ const Footer = ({ pages, className, ...rest }: Props): JSX.Element => {
               <ul>
                 <li>
                   <Typography variant="body1">
-                    Việt Nam: (+84) 0902-234-786
+                    (+66) 096-004-5474
                   </Typography>
                 </li>
                 <li>
                   <Typography variant="body1">
-                    Thái Lan: (+66) 0924-354-725
+                    (+66) 0924-354-725
                   </Typography>
                 </li>
               </ul>

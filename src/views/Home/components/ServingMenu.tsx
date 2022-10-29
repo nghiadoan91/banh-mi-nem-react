@@ -13,8 +13,6 @@ import {
   Avatar
 } from "@material-ui/core";
 import Link from "next/link";
-import { FacebookEmbed } from 'react-social-media-embed';
-import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles(theme => ({
   blogContent: {
@@ -53,18 +51,41 @@ const useStyles = makeStyles(theme => ({
     borderRadius: theme.spacing(0, 0, 10, 0)
   }
 }));
-const PromotionNews = ({ promotionNews }): JSX.Element => {
-  const { t, i18n } = useTranslation();
+const ServingMenu = ({ servingMenu }): JSX.Element => {
   const classes = useStyles();
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });
+  const BlogMediaContent = (props: ImageProps) => (
+    <Image
+      {...props}
+      className={classes.image}
+      lazyProps={{ width: "100%", height: "100%" }}
+    />
+  );
   const BlogContent = (props: any) => (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <FacebookEmbed url={props.url} width={300} />
+    <div className={classes.blogContent}>
+      <Typography variant="h6" color="textPrimary" gutterBottom>
+        {props.name}
+      </Typography>
+      <Typography variant="body1" color="textSecondary">
+        {props.description}
+      </Typography>
+      <div style={{ flexGrow: 1 }} />
+      <Divider className={classes.divider} />
+      <div className={classes.list}>
+        <div className={classes.avatarContainer}>
+          {/* <Avatar {...props.shop.photo} className={classes.avatar} /> */}
+          <Typography variant="body2" color="textPrimary">
+            {props.price}
+          </Typography>
+        </div>
+        <Typography variant="overline" color="textSecondary">
+          {""}
+        </Typography>
+      </div>
     </div>
-
   );
   return (
     <div>
@@ -72,17 +93,34 @@ const PromotionNews = ({ promotionNews }): JSX.Element => {
         title={
           <span>
             <Typography component="span" variant="inherit" color="primary">
-              t{"News from us"}
+              We are serving
             </Typography>
           </span>
         }
       />
       <Grid container spacing={isMd ? 4 : 2}>
-        {promotionNews.map((item: any, index: number) => (
+        {servingMenu.map((item: any, index: number) => (
           <Grid item xs={12} sm={6} md={4} key={index} data-aos="fade-up">
-            <BlogContent
-                      url={item.url}
+            <a target="_blank">
+                <CardProduct
+                  withShadow
+                  liftUp
+                  className={classes.cardProduct}
+                  mediaContent={
+                    <BlogMediaContent
+                      {...{ src: item.imageUrl }}
+                      alt={item.name}
                     />
+                  }
+                  cardContent={
+                    <BlogContent
+                      name={item.name}
+                      description={item.description}
+                      price={item.price}
+                    />
+                  }
+                />
+              </a>
           </Grid>
         ))}
       </Grid>
@@ -90,4 +128,4 @@ const PromotionNews = ({ promotionNews }): JSX.Element => {
   );
 };
 
-export default PromotionNews;
+export default ServingMenu;

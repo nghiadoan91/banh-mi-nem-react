@@ -12,7 +12,7 @@ interface Props {
 }
 
 const Main = ({ children }: Props): JSX.Element => {
-  const { t, i18n } = useTranslation();
+const { t, i18n } = useTranslation();
 const useStyles = makeStyles(theme => ({
   root: {
     height: "100%"
@@ -54,14 +54,14 @@ const useStyles = makeStyles(theme => ({
       href: "/",
       id: "home-pages"
     },
-    aboutUs: {
-      title: t('About us'),
-      href: "/service",
-      id: "service-pages"
+    ourMenu: {
+      title: t('Our Menu'),
+      href: "/menu",
+      id: "menu"
     },
     ourShop: {
-      title: t('Our shop'),
-      href: "/catalog",
+      title: t('Our shops'),
+      href: "/branches",
       id: "catalog"
     },
     news: {
@@ -119,11 +119,11 @@ const useStyles = makeStyles(theme => ({
       <Section className={classes.bigSection}>
         <Section className={classes.smallSection}>
           <Typography className={classes.topText} component="h6" align="center">
-            Banh Mi NEM - Đang trong thời gian hoàn thiện website. Xin liên hệ với{" "}
-            {""}
+            {t("Check out our ")}
             <a href="https://www.facebook.com/banhminem">
-              Facebook mình
+              Facebook Banh mi NEM
             </a>
+            {t(" for news and update related to our shops")}
           </Typography>
         </Section>
       </Section>
