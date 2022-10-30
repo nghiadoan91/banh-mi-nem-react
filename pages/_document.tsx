@@ -16,10 +16,10 @@ export default class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="theme-color" content="#ffffff" />
-          <meta name="title" content="U Shop BKK" />
+          <meta name="title" content="Banh Mi NEM" />
           <meta
             name="description"
-            content="Dịch vụ ORDER và VẬN CHUYỂN hàng Thái Lan tiện lợi và uy tín"
+            content="Authentic Banh mi and Vietnamese street food"
           />
           <meta
             name="robots"
@@ -27,14 +27,14 @@ export default class MyDocument extends Document {
           />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="/assets/logos/ushopbkk-logo.png" />
+          <meta property="og:image" content="/assets/logos/BanhMiNemLogo.png" />
           <meta
             property="og:title"
-            content="UShopBKK - Dịch vụ ORDER và VẬN CHUYỂN"
+            content="Banh Mi NEM - Authentic Banh mi and Vietnamese street food"
           />
           <meta
             property="og:description"
-            content="Dịch vụ ORDER và VẬN CHUYỂN hàng Thái Lan tiện lợi và uy tín"
+            content="Authentic Banh mi and Vietnamese street food"
           />
           <script
             src="https://kit.fontawesome.com/4c273e6d43.js"
