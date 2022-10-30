@@ -109,13 +109,13 @@ const SidebarNav = ({
         />
       </ListItem>
       <ListItem className={classes.listItemButton}>
-        <Button
+        <Button onClick={() => onClose()}
           size="large"
           variant="contained"
           color="primary"
           fullWidth
           component="a"
-          href="/#link-to-order"
+          href="#link-to-order"
         >
           Order Now
         </Button>
