@@ -18,6 +18,7 @@ import "swiper/components/scrollbar/scrollbar.scss";
 import "assets/css/index.scss";
 import {I18nextProvider } from "react-i18next";
 import i18n from'../localization/translationUtils';
+import Script from "next/dist/client/script";
 
 interface AppProps {
   Component: any;
@@ -45,6 +46,18 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <React.Fragment>
       <I18nextProvider i18n={i18n}>
+      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-R77RD6RWK5`} />
+
+      <Script strategy="lazyOnload">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-R77RD6RWK5', {
+              page_path: window.location.pathname,
+              });
+          `}
+      </Script>
       <Head>
         <title>Banh Mi Nem</title>
         <meta

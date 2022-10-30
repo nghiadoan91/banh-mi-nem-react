@@ -12329,6 +12329,11 @@
   "resolved" "https://registry.npmjs.org/react-ga/-/react-ga-3.3.1.tgz"
   "version" "3.3.1"
 
+"react-ga4@^1.4.1":
+  "integrity" "sha512-ioBMEIxd4ePw4YtaloTUgqhQGqz5ebDdC4slEpLgy2sLx1LuZBC9iYCwDymTXzcntw6K1dHX183ulP32nNdG7w=="
+  "resolved" "https://registry.npmjs.org/react-ga4/-/react-ga4-1.4.1.tgz"
+  "version" "1.4.1"
+
 "react-group@^3.0.2":
   "integrity" "sha512-0Jy99MD27jHSJ0PeynomUM0WArxywdcqQUKLttBWV6KYH+zlKWT/RhDwVxrODtMkRxf644BzuJFie1Hvfun7jA=="
   "resolved" "https://registry.npmjs.org/react-group/-/react-group-3.0.2.tgz"
