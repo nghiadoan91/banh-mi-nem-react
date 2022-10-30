@@ -72,7 +72,7 @@ const PromotionNews = ({ promotionNews }): JSX.Element => {
         title={
           <span>
             <Typography component="span" variant="inherit" color="primary">
-              t("News from us")
+              {t("News from us")}
             </Typography>
           </span>
         }
