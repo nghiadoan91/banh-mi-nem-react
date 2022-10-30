@@ -23,16 +23,8 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: '/en',
-      },
-      {
-        source: '/',
-        destination: '/th',
-      },
-      {
-        source: '/',
-        destination: '/vn',
-      },
+        destination: '/default',
+      }
     ]
   },
 };

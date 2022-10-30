@@ -8,8 +8,11 @@ const server = next({
   compression: false,
   conf: { distDir: ".next" }
 });
-
+import { NextResponse, NextRequest } from 'next/server'
 const nextjsHandle = server.getRequestHandler();
 exports.nextServer = https.onRequest((req, res) => {
+  if (pathname == '/') {
+    return NextResponse.redirect('/en')
+  };
   return server.prepare().then(() => nextjsHandle(req, res));
 });
