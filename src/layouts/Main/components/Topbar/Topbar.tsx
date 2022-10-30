@@ -192,7 +192,7 @@ const Topbar = ({
   return (
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
       <div className={classes.logoContainer}>
-        <a href="/default" title="Banh Mi Nem">
+        <a href="/" title="Banh Mi Nem">
           <Image
             className={classes.logoImage}
             src={
