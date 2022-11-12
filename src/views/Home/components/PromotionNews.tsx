@@ -78,7 +78,7 @@ const PromotionNews = ({ promotionNews }): JSX.Element => {
         }
       />
       <Grid container spacing={isMd ? 4 : 2}>
-        {promotionNews.map((item: any, index: number) => (
+        {promotionNews.reverse().map((item: any, index: number) => (
           <Grid item xs={12} sm={6} md={4} key={index} data-aos="fade-up">
             <BlogContent
                       url={item.url}

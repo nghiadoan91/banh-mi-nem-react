@@ -22,7 +22,7 @@ const TopBannerCarousel = ({ topBanners }): JSX.Element => {
   const classes = useStyles();
   return (
     <Swiper slidesPerView={1} pagination={{ clickable: true }} autoplay={true}>
-      {topBanners.map((item: any, index: number) => (
+      {topBanners.reverse().map((item: any, index: number) => (
         <SwiperSlide key={index}>
           <Image
             src={item.imageUrl}
