@@ -13,6 +13,7 @@ const HomePage = (): JSX.Element => {
       <Main>
         <Catalog />
       </Main>
+      
     </div>
   );
 };
