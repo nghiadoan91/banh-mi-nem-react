@@ -72,7 +72,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
       <noscript><img height="1" width="1" style={{display:"none"}}
 src="https://www.facebook.com/tr?id=603849159757376&ev=PageView&noscript=1"
 /></noscript>
-<div id="fb-root"></div>
+{/* <div id="fb-root"></div>
 
     <div id="fb-customer-chat" className="fb-customerchat"></div>
 
@@ -100,7 +100,7 @@ src="https://www.facebook.com/tr?id=603849159757376&ev=PageView&noscript=1"
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));`}
      
-    </Script>
+    </Script> */}
       <Head>
         <title>Banh Mi Nem</title>
         <meta
