@@ -76,7 +76,7 @@ src="https://www.facebook.com/tr?id=603849159757376&ev=PageView&noscript=1"
 
     <div id="fb-customer-chat" className="fb-customerchat"></div>
 
-    <Script strategy="lazyOnload">
+    <Script crossOrigin="Access-Control-Allow-Origin: *" strategy="lazyOnload">
       {` var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "banhminem");
       chatbox.setAttribute("attribution", "biz_inbox");`}
@@ -84,7 +84,7 @@ src="https://www.facebook.com/tr?id=603849159757376&ev=PageView&noscript=1"
     </Script>
 
 
-    <Script strategy="lazyOnload">
+    <Script crossOrigin="Access-Control-Allow-Origin: *" strategy="lazyOnload">
       {` window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
