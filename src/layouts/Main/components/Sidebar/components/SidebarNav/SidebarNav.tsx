@@ -88,7 +88,7 @@ const SidebarNav = ({
           <CloseIcon fontSize="small" />
         </ListItemIcon>
       </ListItem>
-      {[home, service, catalog, guide, contact].map((page, i) => (
+      {[home, service, catalog, contact].map((page, i) => (
         <ListItem className={classes.listItem}>
           <Typography
             component={"a"}

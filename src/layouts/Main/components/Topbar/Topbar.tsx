@@ -218,7 +218,7 @@ const Topbar = ({
               <RenderPageNoDropDown page={page} />
             </div>
           ))}
-          {[language].map((page, i) => (
+          {/* {[language].map((page, i) => (
             <div key={i}>
               <ListItem
                 id={page.id}
@@ -317,7 +317,7 @@ const Topbar = ({
                 </div>
               </Popover>
             </div>
-          ))}
+          ))} */}
           <ListItem>
             <IconText
               fontIconClass="fas fa-phone-alt"

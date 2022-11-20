@@ -72,6 +72,35 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
       <noscript><img height="1" width="1" style={{display:"none"}}
 src="https://www.facebook.com/tr?id=603849159757376&ev=PageView&noscript=1"
 /></noscript>
+<div id="fb-root"></div>
+
+    <div id="fb-customer-chat" className="fb-customerchat"></div>
+
+    <Script strategy="lazyOnload">
+      {` var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "banhminem");
+      chatbox.setAttribute("attribution", "biz_inbox");`}
+     
+    </Script>
+
+
+    <Script strategy="lazyOnload">
+      {` window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));`}
+     
+    </Script>
       <Head>
         <title>Banh Mi Nem</title>
         <meta
