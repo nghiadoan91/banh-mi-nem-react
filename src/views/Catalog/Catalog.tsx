@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { uShopBKKfireStore } from "Config";
+import { banhMiNemfireStore } from "Config";
 import { Section, SectionAlternate } from "components/organisms";
 import { CatalogShop } from "./components";
 
@@ -21,7 +21,7 @@ const Cataglog = (): JSX.Element => {
   const [shops, setShops] = useState<any>([]);
   useEffect(() => {
     console.log("fetch....");
-    uShopBKKfireStore
+    banhMiNemfireStore
       .collection("BranchesPage")
       .doc("Config")
       .get()

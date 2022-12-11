@@ -351,7 +351,7 @@ const Topbar = ({
               variant="contained"
               color="primary"
               component="a"
-              href="/#link-to-order"
+              href="/order"
               className={classes.listItemButton}
             >
               Order Now

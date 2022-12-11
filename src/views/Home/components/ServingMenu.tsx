@@ -100,7 +100,7 @@ const ServingMenu = ({ servingMenu }): JSX.Element => {
       />
       <Grid container spacing={isMd ? 4 : 2}>
         {servingMenu.map((item: any, index: number) => (
-          <Grid item xs={12} sm={6} md={4} key={index} data-aos="fade-up">
+          <Grid item xs={6} sm={6} md={4} key={index} data-aos="fade-up">
             <a target="_blank">
                 <CardProduct
                   withShadow

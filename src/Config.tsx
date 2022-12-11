@@ -25,5 +25,5 @@ export const shipment_pricing_table = databaseRef.child(
 );
 export const common_shops = databaseRef.child("common_shops");
 export const promotion_news = databaseRef.child("promotion_news");
-export const uShopBKKfireStore = firebase.firestore();
+export const banhMiNemfireStore = firebase.firestore();
 export default firebase;

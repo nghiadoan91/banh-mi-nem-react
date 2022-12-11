@@ -115,7 +115,7 @@ const SidebarNav = ({
           color="primary"
           fullWidth
           component="a"
-          href="#link-to-order"
+          href="/order"
         >
           Order Now
         </Button>

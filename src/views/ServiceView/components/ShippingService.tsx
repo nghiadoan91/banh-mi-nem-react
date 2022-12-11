@@ -15,7 +15,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import { uShopBKKfireStore } from "Config";
+import { banhMiNemfireStore } from "Config";
 const useStyles = makeStyles(theme => ({
   checkBox: {
     background: "transparent",
@@ -55,7 +55,7 @@ const ShippingService = (): JSX.Element => {
   const [shipmentPricingTable, setShipmentPricingTable] = useState<any>([]);
   useEffect(() => {
     console.log("fetch....");
-    uShopBKKfireStore
+    banhMiNemfireStore
       .collection("homepage")
       .doc("config")
       .get()

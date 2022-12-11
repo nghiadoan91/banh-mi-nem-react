@@ -13,7 +13,8 @@ import {
   OrderSteps,
   ServingMenu
 } from "./components";
-import { homepage_advantages, uShopBKKfireStore } from "Config";
+import { homepage_advantages, banhMiNemfireStore } from "Config";
+import OrderView from "views/Order";
 
 const useStyles = makeStyles(theme => ({
   sectionAlternate: {
@@ -42,7 +43,7 @@ const Home = (): JSX.Element => {
   });
   useEffect(() => {
     console.log("fetch....");
-    uShopBKKfireStore
+    banhMiNemfireStore
       .collection("HomePage")
       .doc("config")
       .get()
@@ -73,9 +74,7 @@ const Home = (): JSX.Element => {
       <Section>
         <ServingMenu servingMenu={homeState.servingMenu} />
       </Section>
-      <SectionAlternate id="link-to-order">
-        <CommonShop commonShops={homeState.deliveryServices} />
-      </SectionAlternate>
+      <OrderView />
       <Section>
         <PromotionNews promotionNews={homeState.facebookPosts} />
       </Section>

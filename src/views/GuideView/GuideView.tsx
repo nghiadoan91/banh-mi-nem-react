@@ -5,7 +5,7 @@ import { LearnMoreLink } from "../../components/atoms";
 import { SectionHeader } from "../../components/molecules";
 import { Section, SectionAlternate } from "../../components/organisms";
 import { Image } from "components/atoms";
-import { uShopBKKfireStore } from "Config";
+import { banhMiNemfireStore } from "Config";
 import { CatalogShop } from "views/Catalog/components";
 
 const useStyles = makeStyles(theme => {
@@ -33,7 +33,7 @@ JSX.Element => {
   const [menus, setMenus] = useState<any>([]);
   useEffect(() => {
     console.log("fetch....");
-    uShopBKKfireStore
+    banhMiNemfireStore
       .collection("MenuPage")
       .doc("Config")
       .get()

@@ -23,7 +23,7 @@ const Services = ({ advantages }): JSX.Element => {
     <div>
       <Grid className={classes.section} container spacing={4}>
         {advantages.map((item: any, index: number) => (
-          <Grid key={index} item xs={12} sm={6} md={3} data-aos="fade-up">
+          <Grid key={index} item xs={6} sm={6} md={3} data-aos="fade-up">
             <DescriptionListIcon
               title={item.title}
               subtitle={item.subTitle}
