@@ -1,5 +1,5 @@
-const { https } = require("firebase-functions");
-const { default: next } = require("next");
+import { https } from "firebase-functions";
+import { default as next } from "next";
 
 const isDev = process.env.NODE_ENV !== "production";
 
@@ -10,11 +10,12 @@ const server = next({
 });
 
 const nextjsHandle = server.getRequestHandler();
-exports.nextServer = https.onRequest((req, res) => {
+export const nextServer = https.onRequest(async (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
     res.header(
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept, Authorization"
     );
-  return server.prepare().then(() => nextjsHandle(req, res));
+  await server.prepare();
+  return await nextjsHandle(req, res);
 });
