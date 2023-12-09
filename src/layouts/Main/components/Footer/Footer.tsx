@@ -16,12 +16,12 @@ const useStyles = makeStyles(() => ({
   root: {
     paddingTop: 40,
     paddingBottom: 20,
-    background: theme.palette.background.default
+    background: theme.palette.info.main
   },
   root2: {
     paddingTop: 40,
     paddingBottom: 20,
-    background: theme.palette.background.default
+    background: theme.palette.info.main
   },
   footerContainer: {
     maxWidth: 1236,

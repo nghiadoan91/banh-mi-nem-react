@@ -8,9 +8,9 @@ const mode = sessionStorage.getItem("themeMode") || "light";
 const theme = responsiveFontSizes(
   createTheme({
     palette: mode === "light" ? light : dark,
-    typography: {
-      // fontFamily: 'Lato',
-    },
+    // typography: {
+    //   fontFamily: 'Lato',
+    // },
     zIndex: {
       appBar: 1200,
       drawer: 1100

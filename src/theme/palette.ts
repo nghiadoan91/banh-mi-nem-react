@@ -14,7 +14,7 @@ export const light = {
   // type: "light" as PaletteType,
   primary: {
     main: "#BC2248",
-    light: "rgb(71, 145, 219)",
+    light: "rgb(247, 249, 250)",
     dark: "rgb(17, 82, 147)",
     contrastText: "#fff"
   },
@@ -37,9 +37,9 @@ export const light = {
     contrastText: "rgba(0, 0, 0, 0.87)"
   },
   info: {
-    light: "#64b5f6",
-    main: "#2196f3",
-    dark: "#3f51b5",
+    light: "#bbbec0", 
+    main: "#bbbec0",
+    dark: "#bbbec0",
     contrastText: "#fff"
   },
   success: {
@@ -74,7 +74,7 @@ export const light = {
   },
   divider: "rgba(0, 0, 0, 0.12)",
   background: {
-    paper: "#fff",
+    paper: "rgb(247, 249, 250)",
     default: "#fff",
     level2: "#f5f5f5",
     level1: "#fff",
@@ -132,9 +132,9 @@ export const dark = {
     contrastText: "rgba(0, 0, 0, 0.87)"
   },
   info: {
-    light: "#64b5f6",
-    main: "#2196f3",
-    dark: "#3f51b5",
+    light: "#bbbec0", 
+    main: "#bbbec0",
+    dark: "#bbbec0",
     contrastText: "#fff"
   },
   success: {
@@ -188,5 +188,5 @@ export const dark = {
     focus: "rgba(255, 255, 255, 0.12)",
     focusOpacity: 0.12,
     activatedOpacity: 0.24
-  }
+  },
 };

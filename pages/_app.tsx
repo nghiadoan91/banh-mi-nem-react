@@ -15,6 +15,7 @@ import AOS from "aos";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'App.css'
 import {I18nextProvider } from "react-i18next";
 import i18n from'../localization/translationUtils';
 import Script from "next/dist/client/script";

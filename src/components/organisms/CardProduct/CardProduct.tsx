@@ -8,6 +8,7 @@ const useStyles = makeStyles(() => ({
   root: {
     height: '100%',
     width: '100%',
+    background: theme.palette.background.default,
   },
   withShadow: {
     boxShadow: `0 2px 10px 0 ${theme.palette.secondary}`,
