@@ -15,5 +15,5 @@ jobs:
       - run: npm install -g firebase-tools # install firebase-cli
       - run: firebase use --token 1//0gEWgF7klbrzdCgYIARAAGBASNwF-L9IrcMoZcNw3F3f-4FD4FLYl5kbg05hRu6ohl2SaH5er5qnBnQaQolERFVx3KpRwJCRK7_I # set firebase token
       - run: firebase use banh-mi-nem --token 1//0gEWgF7klbrzdCgYIARAAGBASNwF-L9IrcMoZcNw3F3f-4FD4FLYl5kbg05hRu6ohl2SaH5er5qnBnQaQolERFVx3KpRwJCRK7_I # set current project
-      - run: firebase deploy --only functions:nextServer,hosting --debug --token 1//0gEWgF7klbrzdCgYIARAAGBASNwF-L9IrcMoZcNw3F3f-4FD4FLYl5kbg05hRu6ohl2SaH5er5qnBnQaQolERFVx3KpRwJCRK7_I # deploy project
+      - run: firebase deploy --debug --token 1//0gEWgF7klbrzdCgYIARAAGBASNwF-L9IrcMoZcNw3F3f-4FD4FLYl5kbg05hRu6ohl2SaH5er5qnBnQaQolERFVx3KpRwJCRK7_I # deploy project
       
