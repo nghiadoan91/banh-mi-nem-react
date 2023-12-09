@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography, Button } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography, Button } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -33,8 +33,8 @@ import theme from "../../../theme";
 **Custom Background Color Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography, Button, colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography, Button, colors } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -65,8 +65,8 @@ import theme from "../../../theme";
 **Custom Background Image Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography, Button, colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography, Button, colors } from "@mui/material";
 
 import theme from "../../../theme";
 

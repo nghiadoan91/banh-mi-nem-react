@@ -27,3 +27,4 @@ export const common_shops = databaseRef.child("common_shops");
 export const promotion_news = databaseRef.child("promotion_news");
 export const banhMiNemfireStore = firebase.firestore();
 export default firebase;
+console.log("connnected firebase");

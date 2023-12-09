@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Divider } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Divider } from '@mui/material';
 import { Section } from '../../organisms';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     height: '100%',
     width: '100%',

@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import { useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, Grid, Typography } from '@material-ui/core';
+import { useTheme } from '@mui/styles';
+import { useMediaQuery, Grid, Typography } from '@mui/material';
 
 /**
  * Component to display the description with CTA's
@@ -24,22 +24,22 @@ const DescriptionCta = ({
   ...rest
 }: DescriptionCtaProps): JSX.Element => {
   const theme = useTheme();
-  const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
-    defaultMatches: true,
-  });
+  // const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
+  //   defaultMatches: true,
+  // });
 
   let justifyGrid: ('center' | 'flex-start' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly' | undefined) = 'center';
   if (align === 'left') {
-    justifyGrid = isSm ? 'flex-end' : 'flex-start';
+    'flex-start';
   } else if (align === 'right') {
-    justifyGrid = isSm ? 'flex-start' : 'flex-end';
+    'flex-end';
   }
 
   return (
     <Grid
       container
       spacing={2}
-      justify="space-between"
+      justifySelf="space-between"
       alignItems="center"
       className={clsx('description-cta', className)}
       {...rest}
@@ -69,7 +69,7 @@ const DescriptionCta = ({
       <Grid item>
         <Grid
           container
-          justify={justifyGrid || 'center'}
+          justifySelf={justifyGrid || 'center'}
           spacing={1}
           className="description-cta__button-group"
           {...buttonGroupProps}

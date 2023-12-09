@@ -1,11 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import Swiper from 'swiper';
+import theme from '../../../theme';
 
 import { Image } from '../../atoms';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
     height: '100%',
@@ -29,7 +30,7 @@ const useStyles = makeStyles(theme => ({
       background: theme.palette.primary.main,
       borderRadius: '100%',
       position: 'relative',
-      boxShadow: `0 2px 10px 0 ${theme.palette.cardShadow}`,
+      boxShadow: `0 2px 10px 0 ${theme.palette.secondary}`,
       border: `2px solid ${theme.palette.background.paper}`,
       '&:after': {
         fontSize: 'initial',

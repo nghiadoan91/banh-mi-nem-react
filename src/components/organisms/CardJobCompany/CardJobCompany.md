@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid } from "@mui/material";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
@@ -50,8 +50,8 @@ const browserHistory = createBrowserHistory();
 **Outlined Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid } from "@mui/material";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
@@ -102,8 +102,8 @@ const browserHistory = createBrowserHistory();
 **Custom Shadow and LiftUp Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid } from "@mui/material";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 

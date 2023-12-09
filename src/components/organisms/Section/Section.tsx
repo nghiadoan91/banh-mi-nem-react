@@ -1,8 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     maxWidth: 1236,
     width: '100%',

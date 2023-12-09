@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import { banhMiNemfireStore } from "Config";
 import { Section, SectionAlternate } from "components/organisms";
 import { CatalogShop } from "./components";

@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors, Grid, Button, Typography } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors, Grid, Button, Typography } from "@mui/material";
 import { Icon } from 'components/atoms';
 
 import theme from "../../../theme";
@@ -64,8 +64,8 @@ import theme from "../../../theme";
 **Outlined Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors, Grid, Typography, Button } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors, Grid, Typography, Button } from "@mui/material";
 import { Icon } from 'components/atoms';
 
 import theme from "../../../theme";
@@ -130,8 +130,8 @@ import theme from "../../../theme";
 **Custom Shadow and LiftUp Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors, Grid, Typography, Button } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors, Grid, Typography, Button } from "@mui/material";
 import { Icon } from 'components/atoms';
 
 import theme from "../../../theme";

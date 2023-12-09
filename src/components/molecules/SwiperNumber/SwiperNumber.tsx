@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, Grid, Typography } from '@material-ui/core';
+import { makeStyles, useTheme } from '@mui/styles';
+import { useMediaQuery, Grid, Typography } from '@mui/material';
 import Swiper from 'swiper';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   swiperSlide: {
     paddingBottom: theme.spacing(3),
     [theme.breakpoints.up('sm')]: {
@@ -30,7 +31,6 @@ const SwiperNumber = ({
 }: SwiperNumberProps): JSX.Element => {
   const classes = useStyles();
 
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import SwiperCore from "swiper";
+import { Autoplay, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Image } from "components/atoms";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(theme => ({
   swiperContainer: {

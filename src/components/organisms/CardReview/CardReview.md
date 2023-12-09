@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from "../../molecules";
 
 import theme from "../../../theme";
@@ -21,8 +21,8 @@ import theme from "../../../theme";
 **Custom Shadow Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from "../../molecules";
 
 import theme from "../../../theme";
@@ -42,8 +42,8 @@ import theme from "../../../theme";
 **LiftUp Effect Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from "../../molecules";
 
 import theme from "../../../theme";
@@ -64,8 +64,8 @@ import theme from "../../../theme";
 **Basic Card with No Border and No Shadow Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from "../../molecules";
 
 import theme from "../../../theme";
@@ -86,8 +86,8 @@ import theme from "../../../theme";
 **Basic Card with Outlined Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from "../../molecules";
 
 import theme from "../../../theme";

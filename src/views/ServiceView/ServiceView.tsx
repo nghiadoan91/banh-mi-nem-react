@@ -1,6 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import { Section, SectionAlternate } from "../../components/organisms";
+import theme from '../../theme';
 import {
   ServiceListWithIcon,
   Hero,
@@ -9,7 +10,7 @@ import {
   ShippingService
 } from "./components";
 
-const useStyles = makeStyles(theme => {
+const useStyles = makeStyles(() => {
   const toolbar = theme.mixins.toolbar as any;
   return {
     formContainer: {

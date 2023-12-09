@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography } from "@mui/material";
 
 import { SwiperImage } from "../../molecules";
 
@@ -61,8 +61,8 @@ const item = {
 **Custom Shadow Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography } from "@mui/material";
 
 import { SwiperImage } from "../../molecules";
 
@@ -122,8 +122,8 @@ const item = {
 **LiftUp Effect Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography } from "@mui/material";
 
 import { SwiperImage } from "../../molecules";
 
@@ -184,8 +184,8 @@ const item = {
 **Basic Card with No Border and No Shadow Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography } from "@mui/material";
 
 import { SwiperImage } from "../../molecules";
 
@@ -246,8 +246,8 @@ const item = {
 **Basic Card with Outlined Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid, Typography } from "@mui/material";
 
 import { SwiperImage } from "../../molecules";
 

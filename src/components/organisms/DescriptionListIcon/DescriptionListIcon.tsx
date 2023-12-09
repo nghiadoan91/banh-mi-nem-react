@@ -1,7 +1,7 @@
 import React from "react";
 import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
+import { Grid, Typography } from "@mui/material";
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -54,7 +54,7 @@ const DescriptionListIcon = ({
       <Grid
         item
         container
-        justify={gridJustify}
+        justifySelf={gridJustify}
         xs={12}
         className="description-list-icon__icon-wrapper"
       >
@@ -62,7 +62,7 @@ const DescriptionListIcon = ({
       </Grid>
       <Grid item xs={12} className="description-list-icon__title-wrapper">
         <Typography
-          variant={titleVariant}
+          // variant={titleVariant}
           color="textPrimary"
           align={align}
           className={clsx(classes.title, "description-list-icon__title")}
@@ -74,7 +74,7 @@ const DescriptionListIcon = ({
       {subtitle && (
         <Grid item xs={12} className="description-list-icon__subtitle-wrapper">
           <Typography
-            variant={subtitleVariant}
+            // variant={subtitleVariant}
             color="textSecondary"
             align={align}
             className="description-list-icon__subtitle"

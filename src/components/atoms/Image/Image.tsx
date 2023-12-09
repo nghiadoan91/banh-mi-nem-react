@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const useStyles = makeStyles(() => ({

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@mui/styles";
 import { SectionHeader } from "components/molecules";
 import { CardProduct } from "components/organisms";
 import { Image } from "components/atoms";
@@ -11,10 +11,11 @@ import {
   colors,
   Divider,
   Avatar
-} from "@material-ui/core";
+} from "@mui/material";
 import Link from "next/link";
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   blogContent: {
     display: "flex",
     flexDirection: "column",
@@ -53,7 +54,6 @@ const useStyles = makeStyles(theme => ({
 }));
 const ServingMenu = ({ servingMenu }): JSX.Element => {
   const classes = useStyles();
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });

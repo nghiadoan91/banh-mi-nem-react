@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@mui/styles";
 import { SectionHeader } from "components/molecules";
 import { CardProduct } from "components/organisms";
 import { Image } from "components/atoms";
@@ -11,12 +11,13 @@ import {
   colors,
   Divider,
   Avatar
-} from "@material-ui/core";
+} from "@mui/material";
 import Link from "next/link";
-import { FacebookEmbed } from 'react-social-media-embed';
+import { FacebookEmbed } from '@vip30/react-social-media-embed';
 import { useTranslation } from "react-i18next";
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   blogContent: {
     display: "flex",
     flexDirection: "column",
@@ -56,7 +57,6 @@ const useStyles = makeStyles(theme => ({
 const PromotionNews = ({ promotionNews }): JSX.Element => {
   const { t, i18n } = useTranslation();
   const classes = useStyles();
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });

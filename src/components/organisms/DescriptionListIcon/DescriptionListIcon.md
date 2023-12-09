@@ -1,8 +1,8 @@
 **Example with Normal Icon**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { Icon } from '../../atoms';
 
 import theme from "../../../theme";
@@ -19,8 +19,8 @@ import theme from "../../../theme";
 **Example with Alternate Icon**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from '../../molecules';
 
 import theme from "../../../theme";
@@ -38,8 +38,8 @@ import theme from "../../../theme";
 **Aligned Left**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from '../../molecules';
 
 import theme from "../../../theme";
@@ -57,8 +57,8 @@ import theme from "../../../theme";
 **Aligned Right**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 import { IconAlternate } from '../../molecules';
 
 import theme from "../../../theme";

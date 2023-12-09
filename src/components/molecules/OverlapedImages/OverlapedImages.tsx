@@ -1,12 +1,13 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Grid } from '@mui/material';
 
 import { Image } from '../../atoms';
 import { isLightMode } from '../../../utils/utils';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   imageGrid: {
     padding: '.25rem',
     width: '150%',

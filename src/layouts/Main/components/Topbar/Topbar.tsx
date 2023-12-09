@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import {
   Toolbar,
   Hidden,
@@ -11,17 +11,18 @@ import {
   Button,
   ListItemIcon,
   Popover
-} from "@material-ui/core";
+} from "@mui/material";
 import { IconText } from "../../../../components/atoms";
-import MenuIcon from "@material-ui/icons/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Image } from "../../../../components/atoms";
 import { isLightMode } from "../../../../utils/utils";
 import Link from "next/link";
 import i18n from'../../../../../localization/translationUtils';
+import theme from '../../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   flexGrow: {
     flexGrow: 1
   },

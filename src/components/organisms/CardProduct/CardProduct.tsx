@@ -1,15 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardContent, CardMedia } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Card, CardContent, CardMedia } from '@mui/material';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     height: '100%',
     width: '100%',
+    background: theme.palette.background.default,
   },
   withShadow: {
-    boxShadow: `0 2px 10px 0 ${theme.palette.cardShadow}`,
+    boxShadow: `0 2px 10px 0 ${theme.palette.secondary}`,
   },
   noShadow: {
     boxShadow: 'none',

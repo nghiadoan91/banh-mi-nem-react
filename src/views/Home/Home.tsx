@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@mui/styles";
 import { Section, SectionAlternate } from "components/organisms";
 
-import { useMediaQuery } from "@material-ui/core";
+import { useMediaQuery } from "@mui/material";
 import {
   TopBannerCarousel,
   PricingTable,

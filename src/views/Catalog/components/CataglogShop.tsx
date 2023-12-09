@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { Grid, useMediaQuery, colors } from "@material-ui/core";
+import { makeStyles, useTheme } from "@mui/styles";
+import { Grid, useMediaQuery, colors } from "@mui/material";
 import { SectionHeader, IconAlternate, TypedText } from "components/molecules";
 import { CardCategory } from "components/organisms";
 import { Image } from "components/atoms";
+import theme from '../../../theme';
 
 const useStyles = makeStyles(() => ({
   typed: {
@@ -22,7 +23,6 @@ const useStyles = makeStyles(() => ({
 const CatalogShop = ({commonShop }): JSX.Element => {
   const classes = useStyles();
 
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });

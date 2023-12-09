@@ -1,7 +1,7 @@
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors } from "@mui/material";
 
 import theme from "../../../theme";
 

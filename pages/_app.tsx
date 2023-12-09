@@ -5,17 +5,17 @@
  */
 import React from "react";
 import Head from "next/head";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Paper } from "@material-ui/core";
-import CssBaseline from "@material-ui/core/CssBaseline";
+import { withStyles } from '@mui/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Paper } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 import theme from "../src/theme";
 import { useRouter } from 'next/router';
 import AOS from "aos";
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/scrollbar/scrollbar.scss";
-import "assets/css/index.scss";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'App.css'
 import {I18nextProvider } from "react-i18next";
 import i18n from'../localization/translationUtils';
 import Script from "next/dist/client/script";
