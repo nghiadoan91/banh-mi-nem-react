@@ -5,18 +5,19 @@ import {
   Button,
   Grid,
   colors
-} from "@material-ui/core";
-import { withStyles, makeStyles, useTheme } from "@material-ui/core/styles";
+} from "@mui/material";
+import { withStyles, makeStyles, useTheme } from "@mui/styles";
 import { SectionHeader, IconAlternate } from "components/molecules";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
 import { banhMiNemfireStore } from "Config";
-const useStyles = makeStyles(theme => ({
+import theme from "../../../theme";
+const useStyles = makeStyles(() => ({
   checkBox: {
     background: "transparent",
     borderRadius: 0,
@@ -66,7 +67,6 @@ const ShippingService = (): JSX.Element => {
       });
   }, []);
   const classes = useStyles();
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });
@@ -96,7 +96,7 @@ const ShippingService = (): JSX.Element => {
         fadeUp
       />
       <Grid container spacing={3}>
-        <Grid item xs={3} sm={3} container justify="center">
+        <Grid item xs={3} sm={3} container justifySelf="center">
           <IconAlternate
             size="large"
             color={colors.red}
@@ -119,8 +119,8 @@ const ShippingService = (): JSX.Element => {
           />
         </Grid>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={3} container justify="center"></Grid>
-          <Grid item xs={12} sm={9} container justify="center">
+          <Grid item xs={12} sm={3} container justifySelf="center"></Grid>
+          <Grid item xs={12} sm={9} container justifySelf="center">
             <div className={classes.gridwithMargin}>
               <TableContainer
                 className={classes.tableContainer}

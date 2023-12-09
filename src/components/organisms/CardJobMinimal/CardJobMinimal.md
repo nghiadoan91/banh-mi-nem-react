@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid } from "@mui/material";
 import theme from "../../../theme";
 
 <ThemeProvider theme={theme}>
@@ -16,8 +16,8 @@ import theme from "../../../theme";
 **With Extended Props Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Grid } from "@mui/material";
 import theme from "../../../theme";
 
 <ThemeProvider theme={theme}>

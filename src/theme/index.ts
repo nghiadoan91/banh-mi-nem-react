@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@material-ui/core";
+import { createTheme, responsiveFontSizes } from "@mui/material";
 import { sessionStorage } from "../utils/utils";
 
 import { light, dark } from "./palette";
@@ -15,13 +15,13 @@ const theme = responsiveFontSizes(
       appBar: 1200,
       drawer: 1100
     },
-    overrides: {
-      MuiButton: {
-        containedSecondary: {
-          color: "white"
-        }
-      }
-    }
+    // overrides: {
+    //   MuiButton: {
+    //     containedSecondary: {
+    //       color: "white"
+    //     }
+    //   }
+    // }
   })
 );
 

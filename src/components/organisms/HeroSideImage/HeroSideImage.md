@@ -1,7 +1,7 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider, useTheme } from "@material-ui/core/styles";
+import { ThemeProvider, useTheme } from "@mui/styles";
 import { useMediaQuery, Grid, Typography } from "@material-ui/core";
 
 import theme from "../../../theme";
@@ -30,7 +30,7 @@ const isMd = useMediaQuery(theme.breakpoints.up("md"), {
 **Reverse Order Example**
 ```jsx
 import React from "react";
-import { ThemeProvider, useTheme } from "@material-ui/core/styles";
+import { ThemeProvider, useTheme } from "@mui/styles";
 import { useMediaQuery, Grid, Typography } from "@material-ui/core";
 
 import theme from "../../../theme";

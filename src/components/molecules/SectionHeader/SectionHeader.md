@@ -2,7 +2,7 @@
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 
 import theme from "../../../theme";
 
@@ -18,8 +18,8 @@ import theme from "../../../theme";
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Typography } from '@material-ui/core';
+import { ThemeProvider } from "@mui/styles";
+import { Typography } from '@mui/material';
 
 import theme from "../../../theme";
 
@@ -35,7 +35,7 @@ import theme from "../../../theme";
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 
 import theme from "../../../theme";
 
@@ -53,7 +53,7 @@ import theme from "../../../theme";
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 
 import theme from "../../../theme";
 
@@ -68,8 +68,8 @@ import theme from "../../../theme";
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Button } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -90,8 +90,8 @@ import theme from "../../../theme";
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Button } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -112,8 +112,8 @@ import theme from "../../../theme";
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Button } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -135,8 +135,8 @@ import theme from "../../../theme";
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { Button } from "@mui/material";
 import { Image } from '../../atoms';
 
 import theme from "../../../theme";

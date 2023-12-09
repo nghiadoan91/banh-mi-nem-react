@@ -1,8 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, IconButton } from '@material-ui/core';
-import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import { makeStyles } from '@mui/styles';
+import { Grid, Typography, IconButton } from '@mui/material';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { IconAlternate } from '../../molecules';
 import { CardBase } from '../../organisms';
 
@@ -54,7 +54,7 @@ const CardCategoryLink = ({
     >
       <>
       <Grid container spacing={2} className="card-category-link__wrapper">
-        <Grid item container justify={justifyGrid} xs={12}>
+        <Grid item container justifySelf={justifyGrid} xs={12}>
           <IconAlternate
             fontIconClass={fontIconClass}
             color={color}

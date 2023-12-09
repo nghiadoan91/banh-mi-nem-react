@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import {
   Grid,
   Avatar,
@@ -9,7 +9,7 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-} from '@material-ui/core';
+} from '@mui/material';
 import { CardBase } from '../../organisms';
 
 const useStyles = makeStyles(theme => ({
@@ -56,7 +56,7 @@ const CardReview = ({
         <Grid
           item
           container
-          justify={justifyGrid}
+          justifySelf={justifyGrid}
           xs={12}
           className="card-review__icon-wrapper"
         >
@@ -64,7 +64,7 @@ const CardReview = ({
         </Grid>
         <Grid item xs={12} className="card-review__text-wrapper">
           <Typography
-            variant={textVariant}
+            // variant={textVariant}
             align={align}
             component="p"
             {...textProps}
@@ -75,7 +75,7 @@ const CardReview = ({
         <Grid item xs={12} className="card-review__lits-container">
           <Grid
             container
-            justify={justifyGrid}
+            justifySelf={justifyGrid}
             className="card-review__list-wrapper"
           >
             <List disablePadding className="card-review__list">

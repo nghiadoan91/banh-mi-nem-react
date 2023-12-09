@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@mui/styles";
 import { SectionHeader } from "components/molecules";
 import {
   useMediaQuery,
@@ -7,10 +7,11 @@ import {
   Button,
   Grid,
   colors
-} from "@material-ui/core";
+} from "@mui/material";
 import { exchange_rate } from "Config";
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   typed: {
     fontWeight: "bold"
   },
@@ -35,7 +36,6 @@ const FacebookFeed = ({
   }, []);
   const classes = useStyles();
 
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });

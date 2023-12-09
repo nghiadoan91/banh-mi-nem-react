@@ -1,4 +1,4 @@
-import { parse } from 'query-string';
+import queryString from 'query-string';
 
 /**
  * Returns the session storage object
@@ -40,5 +40,5 @@ export const getQueryParams = () => {
     return {};
   }
 
-  return parse(window.location.search);
+  return queryString.parse(window.location.search);
 };

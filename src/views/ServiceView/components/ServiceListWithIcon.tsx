@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@mui/styles";
 import clsx from "clsx";
 import { CardBase } from "components/organisms";
 import {
@@ -8,9 +8,10 @@ import {
   Button,
   Typography,
   colors
-} from "@material-ui/core";
+} from "@mui/material";
 import { SectionHeader, IconAlternate } from "components/molecules";
 import Link from "next/link";
+import theme from '../../../theme';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -28,7 +29,6 @@ const useStyles = makeStyles(() => ({
 const Reviews = ({ className, ...rest }: ViewComponentProps): JSX.Element => {
   const classes = useStyles();
 
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });
@@ -60,7 +60,7 @@ const Reviews = ({ className, ...rest }: ViewComponentProps): JSX.Element => {
           <Grid
             item
             container
-            justify="center"
+            justifySelf="center"
             xs={12}
             className="card-review__icon-wrapper"
           >
@@ -87,7 +87,7 @@ const Reviews = ({ className, ...rest }: ViewComponentProps): JSX.Element => {
           <Grid item xs={12} className="card-review__lits-container">
             <Grid
               container
-              justify="center"
+              justifySelf="center"
               className="card-review__list-wrapper"
             ></Grid>
           </Grid>

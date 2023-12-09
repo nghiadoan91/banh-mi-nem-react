@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Grid, Typography } from '@mui/material';
 import { IconAlternate } from '../../molecules';
 import { CardBase } from '../../organisms';
 
@@ -53,7 +53,7 @@ const CardPromo = ({
         <Grid
           item
           container
-          justify={justifyGrid}
+          justifySelf={justifyGrid}
           xs={12}
           className="card-promo__icon-wrapper"
         >

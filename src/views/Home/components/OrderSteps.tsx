@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "@material-ui/core/styles";
-import { useMediaQuery, Typography, Button, Grid } from "@material-ui/core";
+import { useTheme } from "@mui/styles";
+import { useMediaQuery, Typography, Button, Grid } from "@mui/material";
 import { SectionHeader } from "components/molecules";
 import { Image } from "components/atoms";
+import theme from '../../../theme';
 
 const Services = (): JSX.Element => {
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });

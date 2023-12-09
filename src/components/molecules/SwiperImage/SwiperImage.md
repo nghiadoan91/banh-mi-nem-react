@@ -2,7 +2,7 @@
 ```jsx
 
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 import 'swiper/css/swiper.min.css';
 
 import theme from "../../../theme";

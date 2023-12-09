@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors, Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -42,8 +42,8 @@ import theme from "../../../theme";
 **Outlined Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors, Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -86,8 +86,8 @@ import theme from "../../../theme";
 **Custom Shadow and LiftUp Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors, Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 
@@ -133,8 +133,8 @@ import theme from "../../../theme";
 **Center Aligned**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { colors, Grid } from "@material-ui/core";
+import { ThemeProvider } from "@mui/styles";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 

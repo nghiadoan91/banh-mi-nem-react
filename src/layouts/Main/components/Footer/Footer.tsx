@@ -1,26 +1,27 @@
 import React from "react";
 import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import {
   Typography,
   IconButton,
   Grid,
   List,
   ListItem
-} from "@material-ui/core";
+} from "@mui/material";
+import theme from '../../../../theme';
 
 import { Image, Icon, IconText } from "../../../../components/atoms";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     paddingTop: 40,
     paddingBottom: 20,
-    background: theme.palette.background.footer
+    background: theme.palette.background.default
   },
   root2: {
     paddingTop: 40,
     paddingBottom: 20,
-    background: theme.palette.background.footer2
+    background: theme.palette.background.default
   },
   footerContainer: {
     maxWidth: 1236,

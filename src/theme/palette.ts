@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import { PaletteType } from "@material-ui/core";
+// import { PaletteType } from "@mui/material";
 
 export const light = {
   alternate: {
@@ -11,7 +11,7 @@ export const light = {
     black: "#000",
     white: "#fff"
   },
-  type: "light" as PaletteType,
+  // type: "light" as PaletteType,
   primary: {
     main: "#BC2248",
     light: "rgb(71, 145, 219)",
@@ -106,7 +106,7 @@ export const dark = {
     black: "#000",
     white: "#fff"
   },
-  type: "dark" as PaletteType,
+  // type: "dark" as PaletteType,
   primary: {
     main: "#90caf9",
     light: "rgb(166, 212, 250)",

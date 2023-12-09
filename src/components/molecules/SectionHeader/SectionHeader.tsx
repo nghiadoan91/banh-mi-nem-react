@@ -1,9 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Grid, Typography } from '@mui/material';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     marginBottom: theme.spacing(3),
     [theme.breakpoints.up('md')]: {
@@ -73,7 +74,7 @@ const SectionHeader = ({
         <Grid
           item
           container
-          justify={justifyGrid}
+          justifySelf={justifyGrid}
           xs={12}
           className="section-header__overline-wrapper"
         >
@@ -125,7 +126,7 @@ const SectionHeader = ({
         <Grid item xs={12} className="section-header__cta-wrapper">
           <Grid
             container
-            justify={justifyGrid}
+            justifySelf={justifyGrid}
             alignItems="center"
             wrap="nowrap"
             className="section-header__cta-container"

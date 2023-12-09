@@ -1,11 +1,12 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Button } from '@mui/material';
 import { LearnMoreLink } from '../../components/atoms';
 import { SectionHeader } from '../../components/molecules';
 import { Section } from '../../components/organisms';
+import theme from '../../theme';
 
-const useStyles = makeStyles(theme => {
+const useStyles = makeStyles(() => {
   const toolbar = theme.mixins.toolbar as any;
   return ({
     formContainer: {

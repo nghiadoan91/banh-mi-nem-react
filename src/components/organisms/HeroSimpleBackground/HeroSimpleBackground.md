@@ -1,8 +1,8 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider, useTheme } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { ThemeProvider, useTheme } from "@mui/styles";
+import { Button } from "@mui/material";
 import { SectionHeader } from 'components/molecules';
 import { Section } from 'components/organisms';
 

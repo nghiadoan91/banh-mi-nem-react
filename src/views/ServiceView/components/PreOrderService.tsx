@@ -9,12 +9,14 @@ import {
   ListItem,
   ListItemAvatar,
   Avatar
-} from "@material-ui/core";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+} from "@mui/material";
+import { makeStyles, useTheme } from "@mui/styles";
 import { SectionHeader, IconAlternate } from "components/molecules";
 import { DescriptionListIcon } from "components/organisms";
 import { Icon } from "components/atoms";
-const useStyles = makeStyles(theme => ({
+import theme from '../../../theme';
+
+const useStyles = makeStyles(() => ({
   checkBox: {
     background: "transparent",
     borderRadius: 0,
@@ -37,7 +39,6 @@ const useStyles = makeStyles(theme => ({
 }));
 const PreOrderService = (): JSX.Element => {
   const classes = useStyles();
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });
@@ -54,7 +55,7 @@ const PreOrderService = (): JSX.Element => {
         fadeUp
       />
       <Grid container spacing={3}>
-        <Grid item xs={3} sm={3} container justify="center">
+        <Grid item xs={3} sm={3} container justifySelf="center">
           <IconAlternate
             size="large"
             color={colors.red}
@@ -90,8 +91,8 @@ const PreOrderService = (): JSX.Element => {
           />
         </Grid>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={3} container justify="center"></Grid>
-          <Grid item xs={12} sm={9} container justify="center">
+          <Grid item xs={12} sm={3} container justifySelf="center"></Grid>
+          <Grid item xs={12} sm={9} container justifySelf="center">
             <div className={classes.gridwithMargin}>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={12}>

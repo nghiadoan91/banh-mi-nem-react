@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Button, Grid } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
+import { Button, Grid } from "@mui/material";
 import { LearnMoreLink } from "../../components/atoms";
 import { SectionHeader } from "../../components/molecules";
 import { Section, SectionAlternate } from "../../components/organisms";

@@ -1,7 +1,7 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 

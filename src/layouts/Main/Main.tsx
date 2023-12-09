@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { useMediaQuery, Divider, Typography } from "@material-ui/core";
+import { makeStyles, useTheme } from "@mui/styles";
+import { useMediaQuery, Divider, Typography } from "@mui/material";
 import { Topbar, Footer, Sidebar } from "./components";
 import { Section } from "components/organisms";
 import { useTranslation } from 'react-i18next';
+import theme from '../../theme';
 
 interface Props {
   children: React.ReactNode;
@@ -13,7 +14,7 @@ interface Props {
 
 const Main = ({ children }: Props): JSX.Element => {
 const { t, i18n } = useTranslation();
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     height: "100%"
   },
@@ -43,7 +44,6 @@ const useStyles = makeStyles(theme => ({
 }));
   const classes = useStyles();
 
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });

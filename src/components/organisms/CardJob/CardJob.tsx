@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import {
   Grid,
   Typography,
@@ -8,10 +8,11 @@ import {
   ListItemAvatar,
   Avatar,
   ListItemText,
-} from '@material-ui/core';
+} from '@mui/material';
 import { CardBase } from '../../organisms';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     height: '100%',
     width: '100%',

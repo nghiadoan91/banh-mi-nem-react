@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import * as createPalette from "@material-ui/core/styles/createPalette";
+import * as createPalette from "@mui/styles/createPalette";
 
-declare module "@material-ui/core/styles/createPalette" {
+declare module "@mui/styles/createPalette" {
   interface TypeBackground {
     paper: string;
     default: string;

@@ -2,18 +2,19 @@
 /* eslint-disable react/display-name */
 import React from "react";
 import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import {
   List,
   ListItem,
   Typography,
   ListItemIcon,
   Button
-} from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
+} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import { IconText, Image } from "../../../../../../components/atoms";
+import theme from '../../../../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {},
   listItem: {
     flexDirection: "column",

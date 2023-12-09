@@ -1,10 +1,10 @@
 **Basic Example**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import { colors, Grid } from "@material-ui/core";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 const browserHistory = createBrowserHistory();
@@ -44,10 +44,10 @@ const browserHistory = createBrowserHistory();
 **Outlined Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import { colors, Grid } from "@material-ui/core";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 const browserHistory = createBrowserHistory();
@@ -90,10 +90,10 @@ const browserHistory = createBrowserHistory();
 **Custom Shadow and LiftUp Effect**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import { colors, Grid } from "@material-ui/core";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 const browserHistory = createBrowserHistory();
@@ -139,10 +139,10 @@ const browserHistory = createBrowserHistory();
 **Center Aligned**
 ```jsx
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@mui/styles";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import { colors, Grid } from "@material-ui/core";
+import { colors, Grid } from "@mui/material";
 
 import theme from "../../../theme";
 const browserHistory = createBrowserHistory();

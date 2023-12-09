@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { colors, Typography } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { colors, Typography } from '@mui/material';
 import { Icon } from '../../atoms';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     justifyContent: 'space-between',

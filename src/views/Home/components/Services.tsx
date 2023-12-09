@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "@material-ui/core/styles";
-import { useMediaQuery, Typography, Button, Grid } from "@material-ui/core";
+import { useTheme } from "@mui/styles";
+import { useMediaQuery, Typography, Button, Grid } from "@mui/material";
 import { SectionHeader } from "components/molecules";
 import { DescriptionListIcon } from "components/organisms";
 import { Icon } from "components/atoms";
 import Link from "next/link";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
+import theme from '../../../theme';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   section: {
     paddingTop: 20
 }
 }));
 
 const Services = ({ advantages }): JSX.Element => {
-  const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true
   });
