@@ -10,7 +10,7 @@ const server = next({
 });
 
 const nextjsHandle = server.getRequestHandler();
-export const nextServer = https.onRequest(async (req, res) => {
+const nextServer = https.onRequest(async (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
     res.header(
       "Access-Control-Allow-Headers",
@@ -19,3 +19,4 @@ export const nextServer = https.onRequest(async (req, res) => {
   await server.prepare();
   return await nextjsHandle(req, res);
 });
+module.exports = nextServer;
