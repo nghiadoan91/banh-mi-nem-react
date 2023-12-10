@@ -7,5 +7,10 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")]
   },
-  output: 'export'
+  output: 'export',
+  webpack: (config) => {
+       config.resolve.alias.canvas = false;
+    
+       return config;
+     },
 };

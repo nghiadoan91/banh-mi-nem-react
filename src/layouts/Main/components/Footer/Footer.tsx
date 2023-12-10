@@ -125,17 +125,18 @@ const Footer = ({ pages, className, ...rest }: Props): JSX.Element => {
     <>
       <div {...rest} className={clsx(classes.root2, className)}>
         <div className={classes.footerContainer}>
+        
           <Grid container spacing={0}>
-            <Grid item xs={12} md={5} className={classes.gridContainerFooter}>
+          <Grid item xs={12} md={4} className={classes.gridContainerFooter}>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbanhminem&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=437855381796919" width="340" height="130" style={{border:"none",overflow:"hidden"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </Grid>
+            <Grid item xs={12} md={4} className={classes.gridContainerFooter}>
               <IconText fontIconClass="fas fa-home" title="Head office" />
               <Typography variant="body1">
                   92 Soi Ratchadaphisek 15, Khwaeng Dao Khanong, Khet Thon Buri Krung Thep Maha Nakhon 10600
                   </Typography>
             </Grid>
-            <Grid item xs={12} md={2}>
-              <br></br>
-            </Grid>
-            <Grid item xs={12} md={5} className={classes.gridContainerFooter}>
+            <Grid item xs={12} md={4} className={classes.gridContainerFooter}>
               <IconText fontIconClass="fas fa-phone-alt" title="TEL." />
               <ul>
                 <li>

@@ -7,8 +7,11 @@ import { Section, SectionAlternate } from "../../components/organisms";
 import { Image } from "components/atoms";
 import { banhMiNemfireStore } from "Config";
 import { CatalogShop } from "views/Catalog/components";
-import theme from '../../theme';
+import { Viewer, Worker } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
+import theme from '../../theme';
 const useStyles = makeStyles(() => {
   const toolbar = theme.mixins.toolbar as any;
   return {
@@ -28,6 +31,7 @@ const useStyles = makeStyles(() => {
     }
   };
 });
+
 
 const GuideView = (): 
 JSX.Element => {
@@ -49,9 +53,16 @@ JSX.Element => {
   const handleClick = (): void => {
     window.history.back();
   };
-
+  
   return (
     <div>
+      {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+        <Viewer
+        fileUrl='https://firebasestorage.googleapis.com/v0/b/banh-mi-nem.appspot.com/o/BanhMiNemMenu.pdf?alt=media'
+        plugins={[]}
+        />
+      </Worker> */}
+      
       {menus.map((item: any, index: number) => {
         if (index % 2 === 0) {
           return (
