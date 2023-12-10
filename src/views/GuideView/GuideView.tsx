@@ -8,8 +8,8 @@ import { Image } from "components/atoms";
 import { banhMiNemfireStore } from "Config";
 import { CatalogShop } from "views/Catalog/components";
 import { Viewer, Worker } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+// import '@react-pdf-viewer/core/lib/styles/index.css';
+// import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 import theme from '../../theme';
 const useStyles = makeStyles(() => {
