@@ -8,8 +8,9 @@ import { Image } from "components/atoms";
 import { banhMiNemfireStore } from "Config";
 import { CatalogShop } from "views/Catalog/components";
 import { Viewer, Worker } from '@react-pdf-viewer/core';
-// import '@react-pdf-viewer/core/lib/styles/index.css';
-// import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 
 import theme from '../../theme';
 const useStyles = makeStyles(() => {
@@ -36,6 +37,7 @@ const useStyles = makeStyles(() => {
 const GuideView = (): 
 JSX.Element => {
   const [menus, setMenus] = useState<any>([]);
+  const [pdf, setPdf] = useState<any>(null);
   useEffect(() => {
     console.log("fetch....");
     banhMiNemfireStore
@@ -56,12 +58,22 @@ JSX.Element => {
   
   return (
     <div>
-      {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-        <Viewer
-        fileUrl='https://firebasestorage.googleapis.com/v0/b/banh-mi-nem.appspot.com/o/BanhMiNemMenu.pdf?alt=media'
-        plugins={[]}
-        />
-      </Worker> */}
+      <Section key="main" className={classes.section}>
+        <div>
+                  <SectionHeader title="Our Menu" align="center" />
+        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js" >
+          <Viewer
+          
+          fileUrl={"https://firebasestorage.googleapis.com/v0/b/banh-mi-nem.appspot.com/o/BanhMiNemMenu.pdf?alt=media"}
+          plugins={[
+            defaultLayoutPlugin()
+          ]}
+          />
+        </Worker>
+        </div>
+        </Section>
+      
+      
       
       {menus.map((item: any, index: number) => {
         if (index % 2 === 0) {

@@ -4,6 +4,9 @@ module.exports = withImages();
 const path = require("path");
 
 module.exports = {
+  experimental: {
+    appDir: true,
+  },
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")]
   },

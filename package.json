@@ -38,6 +38,7 @@
     "@mui/material": "^5.14.20",
     "@mui/styles": "^5.14.20",
     "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
     "@vip30/react-social-media-embed": "^2.3.6",
     "aos": "~2.3.4",
     "axios": "~1.6.2",
