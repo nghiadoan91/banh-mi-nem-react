@@ -54,7 +54,7 @@ const useStyles = makeStyles(() => ({
     borderRadius: theme.spacing(0, 0, 10, 0)
   }
 }));
-const PromotionNews = ({ promotionNews }): JSX.Element => {
+const PromotionNews = ({ promotionNews, title }): JSX.Element => {
   const { t, i18n } = useTranslation();
   const classes = useStyles();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
@@ -72,7 +72,7 @@ const PromotionNews = ({ promotionNews }): JSX.Element => {
         title={
           <span>
             <Typography component="span" variant="inherit" color="primary">
-              {t("News from us")}
+              {title}
             </Typography>
           </span>
         }

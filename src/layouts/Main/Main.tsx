@@ -60,8 +60,8 @@ const useStyles = makeStyles(() => ({
       id: "menu"
     },
     ourShop: {
-      title: t('Our shops'),
-      href: "/branches",
+      title: t('Food Support'),
+      href: "/food-support",
       id: "catalog"
     },
     news: {

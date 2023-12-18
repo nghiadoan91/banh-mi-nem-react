@@ -15,6 +15,7 @@ import {
 } from "./components";
 import { homepage_advantages, banhMiNemfireStore } from "Config";
 import OrderView from "views/Order";
+import { t } from "i18next";
 
 const useStyles = makeStyles(theme => ({
   sectionAlternate: {
@@ -76,7 +77,7 @@ const Home = (): JSX.Element => {
       </Section>
       <OrderView />
       <Section>
-        <PromotionNews promotionNews={homeState.facebookPosts} />
+        <PromotionNews promotionNews={homeState.facebookPosts} title={ t("News from us")} />
       </Section>
     </div>
   );
