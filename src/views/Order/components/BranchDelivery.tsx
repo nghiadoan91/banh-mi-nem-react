@@ -120,6 +120,35 @@ const BranchDelivery = ({ commonShop }): JSX.Element => {
             </a>
           </Grid>: null
         }
+        {(commonShop.dRobinHoodUrl != "") ?
+          <Grid
+            key={1}
+            item
+            container
+            alignItems="center"
+            direction="column"
+            xs={6}
+            sm={6}
+            md={3}
+            data-aos="fade-up"
+          >
+            <a href={commonShop.dRobinHoodUrl} target="blank">
+              <CardCategory
+                variant="outlined"
+                liftUp
+                align="center"
+                title={"Robinhood"}
+                icon={
+                  <Image
+                    className={classes.logo}
+                    src={"https://firebasestorage.googleapis.com/v0/b/banh-mi-nem.appspot.com/o/Delivery%2FshopeeFood.png?alt=media"}
+                    lazyProps={{ height: 100 }}
+                  />
+                }
+              />
+            </a>
+          </Grid>: null
+      }
       </Grid>
     </div>
   );
