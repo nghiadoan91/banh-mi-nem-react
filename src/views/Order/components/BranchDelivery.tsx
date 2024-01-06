@@ -120,7 +120,7 @@ const BranchDelivery = ({ commonShop }): JSX.Element => {
             </a>
           </Grid>: null
         }
-        {(commonShop.dRobinHoodUrl != "") ?
+        {(commonShop.dShopeeUrl != "") ?
           <Grid
             key={1}
             item
@@ -132,12 +132,12 @@ const BranchDelivery = ({ commonShop }): JSX.Element => {
             md={3}
             data-aos="fade-up"
           >
-            <a href={commonShop.dRobinHoodUrl} target="blank">
+            <a href={commonShop.dShopeeUrl} target="blank">
               <CardCategory
                 variant="outlined"
                 liftUp
                 align="center"
-                title={"Robinhood"}
+                title={"Shopee Food"}
                 icon={
                   <Image
                     className={classes.logo}

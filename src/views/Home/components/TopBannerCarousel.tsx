@@ -25,11 +25,13 @@ const TopBannerCarousel = ({ topBanners }): JSX.Element => {
     <Swiper slidesPerView={1} pagination={{ clickable: true }} autoplay={true}>
       {topBanners.reverse().map((item: any, index: number) => (
         <SwiperSlide key={index}>
+          <a href={item.href} target="blank">
           <Image
             src={item.imageUrl}
             className={classes.image}
             lazyProps={{ width: "100%", height: "100%" }}
           />
+          </a>
         </SwiperSlide>
       ))}
     </Swiper>
