@@ -11,6 +11,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 import theme from '../../theme';
 import { t } from "i18next";
+import FoodTruckSupport from "./component/FoodTruckSupport";
 const useStyles = makeStyles(() => {
   const toolbar = theme.mixins.toolbar as any;
   return {
@@ -37,6 +38,7 @@ JSX.Element => {
   const [menus, setMenus] = useState<any>([]);
   const [contact, setContact] = useState<any>([]);
   const[facebookPosts, setFacebookPosts] = useState<any>([]);
+  const[foodTruck, setfoodTrucks] = useState<any>([]);
   useEffect(() => {
     console.log("fetch....");
     banhMiNemfireStore
@@ -47,6 +49,7 @@ JSX.Element => {
         if (result.data() != null) {
           setMenus(result.data().menus);
           setFacebookPosts(result.data().facebookPosts);
+          setfoodTrucks(result.data().foodTruck);
           console.log("facebookPosts", result.data().facebookPosts);
         }
       });
@@ -97,12 +100,18 @@ JSX.Element => {
           );
         }
       })}
+      
       <Section key={99} className={classes.section}>
         <ContactChat commonShops={contact} />
       </Section>
       <Section>
+      <FoodTruckSupport foodTrucks={foodTruck}/>
+      </Section>
+      <Section>
         <PromotionNews promotionNews={facebookPosts} title={ t("Our Work")} />
       </Section>
+
+      
     </div>
   );
 };
